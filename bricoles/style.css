@@ -1,0 +1,289 @@
+/* -----CONTROLE DIV---------------------------------------------------------------------------------------------------------------------- */
+
+#areaControl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: darkgrey;
+}
+
+.mouseEvent{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* -----MOVE DIV---------------------------------------------------------------------------------------------------------------------- */
+
+#areaRandmove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 800px;
+    margin: 50px auto;
+    background-color: darkgrey;
+}
+
+.moveEvent{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#areablue{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: darkblue;
+    z-index: 2;
+}
+#areared{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    background-color: darkred;
+    z-index: 1;
+}
+
+
+/* -----CONSOLE---------------------------------------------------------------------------------------------------------------------- */
+
+/* BOITIER */
+
+#console{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: lightgray;
+    z-index: 0;
+}
+
+#box{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin: 0px auto;
+    box-shadow: 5px 5px 5px rgb(29, 29, 29);
+    background: rgb(51, 51, 51);
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgb(29, 29, 29);
+    border-top-color: black ;
+    border-radius: 5%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    z-index: 2;
+}
+
+#boutons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px auto; */
+}
+
+.bt{
+    text-align: center;
+    height: 30px;
+    width: 60px;
+    margin: 10px;
+    padding: 3px;
+    background: black;
+    border-style: solid;
+    border-color: slategrey;
+    border-width: 5px;
+    border-radius: 3px;
+    font-family: "dotma";
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+#bte{
+    color: rgb(0, 109, 160);   
+}
+
+#btr{
+    color: red;
+}
+
+#btf{
+    color: blue;
+}
+
+#bt1{
+    color: cyan;
+}
+
+#bt2{
+    color: purple;
+}
+
+#bt3{
+    color: rgb(37, 160, 0);
+}
+
+/* Ecran */
+
+#ecran{
+    position: absolute;
+    top: 330px;
+    left: 140px;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(80, 221, 179, 0.300);
+    border:10px solid rgba(250, 250, 250, 0.884);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-radius: 30%;
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+    font-family: "saira";
+    font-size: 100%;
+    letter-spacing: 5px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+
+#tab{
+    margin: 0px auto;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.joueur{
+    font-family: "sairai";
+    cursor: pointer;
+    transition: 0.5; 
+}
+
+.joueur:hover{
+    color: red;
+    transition: 0.5s;
+    animation: jtab 0.2s linear infinite;
+}
+
+.bcj{
+    background-color: transparent;
+    font-family: 'sairai';
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+    cursor: pointer;
+    border-color: transparent;
+    transition: 1s;
+}
+
+.bcj:hover{
+    color: red;
+    animation: jtab 0.2s linear infinite;
+}
+
+@keyframes jtab{
+    0%{text-shadow:  5px 5px 3px rgb(100, 25, 25); }
+    50%{text-shadow:  5px 5px 3px rgb(200, 25, 25); }
+    100%{text-shadow:  5px 5px 3px rgb(250, 25, 25); }
+}
+
+/* -----CLOCK---------------------------------------------------------------------------------------------------------------------- */
+
+#boxcad{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#horloge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+    margin: 10% auto;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(24, 24, 24);
+    background: gray;
+    color: white;
+    overflow: hidden;
+}
+
+#cadran1,#cadran2{
+    display: flex;
+    align-items: center;
+    height: 130px;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(24, 24, 24);
+    background: rgb(32, 32, 32);
+}
+
+#acen1,#acen2,#asec1,#asec2,#amin1,#amin2,#ahrs1,#ahrs2{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+    background: black;
+    font-size: 100px;
+}
+
+#bbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(24, 24, 24);
+    background-color: lightslategray;
+}
+
+.btn{
+    background-color: black;
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* -----FRAME---------------------------------------------------------------------------------------------------------------------- */
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridframe,table,tr,th{
+    border-collapse: collapse;
+}
+
+#gridframe{
+    margin: 30px auto;
+    pointer-events: none;
+}
+
+#gridframe th{
+    height: 25px;
+    width: 25px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}

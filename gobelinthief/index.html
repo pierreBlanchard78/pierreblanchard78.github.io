@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="items.css">
+  <link rel="stylesheet" href="hud.css">
+  <title>Gobelin Thief</title>
+</head>
+<body id="body">
+  <div class="main">
+    <div class="rogue"></div>
+    <div class="innkeeper"></div>
+    <div class="rogueBack"></div>
+    <div class="troll"></div>
+    <div class="merchant"></div>
+    <div class="gobelin"></div>
+    <div class="display">
+      <div class="header">
+        <h1 class="displayTitle"></h1>
+        <p class="displayParagraph"></p>
+      </div>
+      <p class="displayDialogue"></p>
+      <p class="displayAnswers">
+        <ul>
+          <li class="answer1"></li>
+          <li class="answer2"></li>
+          <li class="answer3"></li>
+        </ul>
+      </p>
+      <div class="displayButtons">
+        <button type="button" class="displayButton" id="buttonPass">Passer</button>
+        <button type="button" class="displayButton" id="buttonBack">Retour</button>
+        <button type="button" class="displayButton" id="buttonQuit">Quitter</button>
+        <button type="button" class="displayButton" id="buttonInterlocutor">></button>
+      </div>
+    </div><!-- FIN DISPLAY -->
+    <div class="hud">
+      <div class="displayHealth">
+        <div class="healthIcon">+</div><span class="numberHealth"></span>
+      </div>
+      <div class="displayGold">
+        <div class="goldIcon">$</div><span class="numberGold"></span>
+      </div>
+      <div class="displayInventory">
+        <table>
+          <tr>
+            <td class="emplacement1"></td><td class="emplacement2"></td><td class="emplacement3"></td>
+          </tr>
+          <tr>
+            <td class="emplacement4"></td><td class="emplacement5"></td><td class="emplacement6"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="principalItem1"></div>
+      <div class="principalItem2"></div>
+    </div><!-- FIN HUD -->
+  </div><!-- FIN MAIN -->
+<script src="village.js"></script>
+<script src="tavern.js"></script>
+<script src="dialogue.js"></script>
+<script src="script.js"></script>  
+<script src="player.js"></script>
+</body>
+</html>

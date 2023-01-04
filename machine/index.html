@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--MACHINE A SOUS-->
+<!-- JACKPOT -->
+<!-- SIGNATURE -->
+<!-- PANNEAU TAUX GAINS -->
+<!-- CADRAN ROULEAUX -->
+<!-- CADRAN INFOS JETONS -->
+<!-- CADRAN BOUTONS -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>
+        <p style="position:absolute;left:650px;color:red;font-weight: bold;">
+          ///JAVASCRIPT DESACTIVE\\\ javascript indispensable ! Veuillez activer javascript.
+        </p><br>
+    </noscript>
+    <!--MACHINE A SOUS-->
+    <div id="boxMachine">
+        <!-- JACKPOT -->
+        <div id="jackpot">JACKPOT</div>
+        <!-- SIGNATURE -->
+        <div id="signature">Rosenthal <br> <p>&</p> <br> Spilotro</div>
+        <!-- PANNEAU TAUX GAINS -->
+        <div id="panel">
+            <table>
+                <tr>
+                    <th><img src="img/panneau/sept.png" alt=""><img src="img/panneau/sept.png" alt=""><img src="img/panneau/sept.png" alt=""> = 1000 x mise</th><th><img src="img/panneau/sept.png" alt=""><img src="img/panneau/sept.png" alt=""> = 100 x mise</th>
+                </tr>
+                <tr>
+                    <th><img src="img/panneau/bar.png" alt=""><img src="img/panneau/bar.png" alt=""><img src="img/panneau/bar.png" alt=""> = 500 x mise</th><th><img src="img/panneau/bar.png" alt=""><img src="img/panneau/bar.png" alt=""> = 50 x mise</th>
+                </tr>
+                <tr>
+                    <th><img src="img/panneau/cloche.png" alt=""><img src="img/panneau/cloche.png" alt=""><img src="img/panneau/cloche.png" alt=""> = 250 x mise</th><th><img src="img/panneau/cloche.png" alt=""><img src="img/panneau/cloche.png" alt=""> = 25 x mise</th>
+                </tr>
+                <tr>
+                    <th><img src="img/panneau/cerises.png" alt=""><img src="img/panneau/cerises.png" alt=""><img src="img/panneau/cerises.png" alt=""> = 100 x mise</th><th><img src="img/panneau/cerises.png" alt=""><img src="img/panneau/cerises.png" alt=""> = 10 x mise</th>
+                </tr>
+                <tr>
+                    <th><img src="img/panneau/pastèque.png" alt=""><img src="img/panneau/pastèque.png" alt=""><img src="img/panneau/pastèque.png" alt=""> = 50 x mise</th><th><img src="img/panneau/pastèque.png" alt=""><img src="img/panneau/pastèque.png" alt=""> = 5 x mise</th>
+                </tr>
+                <tr>
+                    <th><img src="img/panneau/citron.png" alt=""><img src="img/panneau/citron.png" alt=""><img src="img/panneau/citron.png" alt=""> = 25 x mise</th><th><img src="img/panneau/citron.png" alt=""><img src="img/panneau/citron.png" alt=""> = 2 x mise</th>
+                </tr>
+            </table>
+        </div>
+        <!-- CADRAN ROULEAUX -->
+        <div id="displayRolls">
+            <table>
+                <tr>
+                    <th><div id="rolls1"></div></th>
+                    <th><div id="rolls2"></div></th>
+                    <th><div id="rolls3"></div></th>
+                </tr>
+            </table>
+        </div>
+        <!-- CADRAN INFOS JETONS -->
+        <div id="displayTokenInfos">
+            <table>
+                <tr>
+                    <th class="classEarnings" id="earningsTitle">GAINS</th><th class="classEarnings" id="displayEarnings"></th>
+                </tr>
+                <tr>
+                    <th class="classBet" id="betTitle">MISE</th><th class="classBet" id="displayBet"></th>
+                </tr>
+                <tr>
+                    <th class="classTokens" id="tokensTitle">JETONS</th><th class="classTokens" id="displayTokens"></th>
+                </tr>
+            </table>    
+        </div>
+        <!-- CADRAN BOUTONS -->
+        <div id="boxButtonsMachine">
+            <button type="button" class="buttonsMachine" id="lauch">LANCER</button>
+            <button type="button" class="buttonsMachine" id="betUp">AUGMENTER MISE <p id="max">3 jetons max.</p> </button>
+            <button type="button" class="buttonsMachine" id="betDown">BAISSER MISE</button>
+            <button type="button" class="buttonsMachine" id="earningsUp">AJOUTER GAINS</button>
+        </div> 
+    </div>
+    <!-- FIN DIV MACHINE -->
+    <script src="machine.js"></script>
+</body>
+</html>

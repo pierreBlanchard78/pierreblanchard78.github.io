@@ -1,0 +1,176 @@
+/* -----SLOT MACHINE---------------------------------------------------------------------------------------------------------------------- */
+/* BOX MACHINE */
+/* JACKPOT */
+/* JACKPOT ASSET */
+/* SIGNATURE */
+/* EARNING RATE PANEL */
+/* DIAL ROLLS */
+/* TOKEN INFO PANEL */
+/* FLASHING TOKENS INFOS */
+/* BUTTONS MACHINE PANEL */
+/* BUTTONS MACHINE */
+
+@font-face{font-family: 'sign2';src: url(font/Signature2.otf);}
+@font-face{font-family: 'sign3';src: url(font/Signature3.ttf);}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg,gold,brown);
+}
+/* BOX MACHINE */
+#boxMachine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 500px;
+    margin: 10% auto;
+    border:  10px solid rgb(24, 24, 24);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: brown;
+    color: white;
+    overflow: hidden;
+}
+/* JACKPOT */
+#jackpot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    margin: -50px auto;
+    border: 5px solid rgb(24, 24, 24);
+    border-radius: 10px;
+    background-color: gold;
+    font-size: 45px ;
+    font-weight: bold;
+    font-family: 'sign2';
+    text-shadow: 3px 3px 3px brown;
+}
+/* JACKPOT ACTIF */
+.lumjack{animation: jack 0.3s linear infinite;}
+@keyframes jack{
+    0%{color: white}
+    50%{color:yellow}
+    100%{color: red}
+}
+/* SIGNATURE */
+#signature{
+    margin-left: 400px;
+    margin-bottom: 20px;
+    font-family: 'sign3';
+    font-size: 20px;
+    line-height: 1px;
+    text-shadow: 3px 3px 3px gold;
+    transform: rotate(-20deg);
+}
+#signature p{
+    margin-left: 25px;
+}
+/* EARNING RATE PANEL */
+#panel{
+    height: 170px;
+    margin: 20px auto;
+    border: 5px solid rgb(24, 24, 24);
+    border-radius: 10px;
+    background-color: gold;
+}
+/* DIAL ROLLS */
+#displayRolls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background: rgb(32, 32, 32);
+}
+
+#displayRolls th{
+    background-color: black;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(24, 24, 24);
+    background-color: blue;
+}
+
+#rolls1,#rolls2,#rolls3{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+    font-size: 100px;
+}
+/* TOKEN INFO PANEL */
+#displayTokenInfos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+#displayTokenInfos th{
+    height: 30px;
+    width: 100px;
+    background-color: gold;
+    border: 5px solid rgb(24, 24, 24);
+    border-radius: 10px;
+    font-size: 30px;
+}
+/* FLASHING TOKENS INFOS */
+.lumgains{animation: tg 0.2s linear infinite}
+@keyframes tg{
+    0%{color: red}
+    100%{color: white}
+}
+
+.lummise{animation: tm 0.2s linear infinite}
+@keyframes tm{
+    0%{color: red}
+    100%{color: white}
+}
+
+.lumjetons{animation: tj 0.2s linear infinite}
+@keyframes tj{
+    0%{color: red}
+    100%{color: white}
+}
+/* BUTTONS MACHINE PANEL */
+#boxButtonsMachine{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid rgb(24, 24, 24);
+    border-radius: 10px;
+    background-color: gold;
+}
+/* BUTTONS MACHINE */
+.buttonsMachine{
+    height: 50px;
+    margin: 0 5px;
+    background-color: orangered;
+    border-width: 0.1px black;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+.buttonsMachine:hover{
+animation: lumButtons 0.3s linear infinite;
+}
+@keyframes lumButtons{
+    0%{color: red}
+    100%{color: white}
+}
+
+#max{
+    font-size: 8px;
+    margin-left: 77px;
+    margin-top: -10px;
+}

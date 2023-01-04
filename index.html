@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+</head>
+<body>
+
+        <form class="input" action="portfolio.html">
+            <span class="message">
+                <!-- NO-SCRIPT MESSAGE -->
+                <noscript>
+                    <p style="color:red;font-weight: bold;">
+                        ///JAVASCRIPT DESACTIVE\\\ javascript indispensable ! Veuillez activer javascript.
+                        <a href="https://support.google.com/adsense/answer/12654?hl=fr">>Aide</a>
+                    </p>
+                </noscript>
+            </span>
+            <label for="inputPseudo">Pseudo</label>
+                <input type="text" placeholder="Pseudo" class="inputs" id="inputPseudo" maxlength="15">
+            <label for="inputPass">Mot de passe</label>
+                <input type="text" placeholder="Mot de passe" class="inputs" id="inputPass" maxlength="10"> 
+            <button type="submit" class="buttonEnter">Entrer</button>
+        </form>
+
+</body>
+<!-- STYLE -->
+<style>
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;      
+        height: 350px;
+        width: 350px;
+        margin: 200px auto;
+        background-color:lightseagreen;
+        border: 3px solid black;
+        border-radius: 10%;
+        box-shadow: 10px 10px 0px darkslategrey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .inputs{
+        height: 40px;
+        width: 300px;
+        margin: 10px 0px;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+    .inputs::placeholder{
+        font-size: 0.5em;
+        text-align: center;
+        font-style: italic;
+        color: lightseagreen;
+    }
+    .inputs:focus{
+        background-color: aquamarine;
+    }
+    .message{
+        font-size: 0.5em;
+        color: red;
+        margin: 10px;
+    }
+    .buttonEnter{
+        height: 40px;
+        width: 100px;
+        margin: 20px 0px;
+        border: 3px solid black;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.5em;
+        font-weight: bold;
+    }
+    .buttonEnter:hover{
+        color: lightseagreen;
+        border-color: aquamarine;
+    }
+    </style>
+    <script>
+        const form = document.getElementById('input')
+        const pseudo = document.getElementById('inputPseudo')
+        const pass = document.getElementById('inputPass')
+        const enter = document.querySelector('.buttonEnter')
+        const message = document.querySelector('.message')
+        const listeId = [
+            ['slayer','26048920p'],
+            ['mikyta','0678598239'],
+        ]
+
+        pseudo.addEventListener('input',(e)=>{
+            if(e.target.value.length>14||e.target.value.length<3){
+                message.style.color = 'red'
+                message.textContent = 'Le pseudo doit contenir 3 caractères minimum, 15 maximum'
+            }else{message.textContent = ''}
+        })
+        pseudo.addEventListener('keydown', (e) => {
+            const choiceKey = e.key
+            if (choiceKey === 'Enter') {
+                event.preventDefault()
+                event.stopPropagation()
+                if(e.target.value.length>14||e.target.value.length<3){
+                    message.style.color = 'red'
+                    message.textContent = 'Le pseudo doit contenir 3 caractères minimum, 15 maximum'
+                }else{e.target.blur();pass.focus()}
+
+            }
+        })
+
+        pass.addEventListener('input',(e)=>{
+            if(e.target.value.length>9||e.target.value.length<3){
+                message.style.color = 'red'
+                message.textContent = 'Le mot de passe doit contenir 3 caractères minimum, 10 maximum'
+            }else{message.textContent = ''
+            }
+        })
+        
+        pass.addEventListener('keydown', (e) => {
+            const choiceKey = e.key
+            if (choiceKey === 'Enter') {
+                event.preventDefault();
+                event.stopPropagation();
+                if(pseudo.value===''||pseudo.value.length<3){
+                    pseudo.focus()
+                }
+                else{enter.focus()}
+            }
+        })
+
+        enter.addEventListener('click',(event)=>{
+            for(elem of listeId){
+                if(pseudo.value===elem[0]&&pass.value===elem[1]){
+                    console.log(pseudo.value===elem[0]&&pass.value===elem[1])
+                    message.style.color = 'green'
+                    message.textContent = `Identifiants valides. Vous allez etre dirigé sur la page d'acceuil`
+                    localStorage.setItem('userName', pseudo.value)
+                    console.log(localStorage)
+                    break
+                }else{
+                event.preventDefault()
+                message.style.color = 'red'
+                message.textContent = `Identifiants incorrectes, Veuillez rééssayer.`
+                pseudo.focus()
+                }
+            }
+        })
+    </script>
+</html>

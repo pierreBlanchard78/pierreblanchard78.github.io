@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batnav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+<!-------BATAILLE NAVALE---------------------------------------------------------------------------------------------------------------------->
+        <div id="naval">
+            <div>
+                <table class="info">
+                    <tr>
+                        <th>
+                            <select class="selectGame">
+                                <option value="game1">JEU 1</option>
+                                <option value="game2">JEU 2</option>
+                                <option value="game3">JEU 3</option>
+                                <option value="game4">JEU 4</option>
+                                <option value="game5">JEU 5</option>
+                            </select>
+                        </th>
+                        <th>ROUND</th><th>SCORE</th><th>TARGET DESTROYED</th>
+                    </tr>
+                    <tr>
+                        <th>PLAYER</th><td id="roundPlayer"></td><td id="scorePlayer"></td>
+                        <td id="targetPlayer">
+                            <div class="targetListPlayer">
+                                <div class="targetPlayerBoats" id="aircraftCarrierPlayer"></div>
+                                <div class="targetPlayerBoats" id="cruiserPlayer"></div>
+                                <div class="targetPlayerBoats" id="submarinePlayer1"></div>
+                                <div class="targetPlayerBoats" id="submarinePlayer2"></div>
+                                <div class="targetPlayerBoats" id="torpedoBoatPlayer1"></div>
+                                <div class="targetPlayerBoats" id="torpedoBoatPlayer2"></div>
+                                <div class="targetPlayerBoats" id="torpedoBoatPlayer3"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>IA</th><td id="roundIa"></td><td id="scoreIa"></td>
+                        <td id="targetIa">
+                            <div class="targetListIa">
+                                <div class="targetIaBoats" id="aircraftCarrierIa"></div>
+                                <div class="targetIaBoats" id="cruiserIa"></div>
+                                <div class="targetIaBoats" id="submarineIa1"></div>
+                                <div class="targetIaBoats" id="submarineIa2"></div>
+                                <div class="targetIaBoats" id="torpedoBoatIa1"></div>
+                                <div class="targetIaBoats" id="torpedoBoatIa2"></div>
+                                <div class="targetIaBoats" id="torpedoBoatIa3"></div>
+                            </div>    
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table class="grid">
+                <tr>
+                    <th class="casen" id="">v</th><th class="casen" id="">1</th><th class="casen" id="">2</th><th class="casen" id="">3</th><th class="casen" id="">4</th><th class="casen" id="">5</th><th class="casen" id="">6</th><th class="casen" id="">7</th><th class="casen" id="">8</th><th class="casen" id="">9</th><th class="casen" id="">10</th><th class="casen" id="">11</th><th class="casen" id="">12</th><th class="casen" id="">13</th><th class="casen" id="">14</th><th class="casen" id="">15</th>
+                </tr>
+                <tr>
+                    <th class="casen" id="">A</th><td class="case" id="A1"></td><td class="case" id="A2"></td><td class="case" id="A3"></td><td class="case" id="A4"></td><td class="case" id="A5"></td><td class="case" id="A6"></td><td class="case" id="A7"></td><td class="case" id="A8"></td><td class="case" id="A9"></td><td class="case" id="A10"></td><td class="case" id="A11"></td><td class="case" id="A12"></td><td class="case" id="A13"></td><td class="case" id="A14"></td><td class="case" id="A15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">B</th><td class="case" id="B1"></td><td class="case" id="B2"></td><td class="case" id="B3"></td><td class="case" id="B4"></td><td class="case" id="B5"></td><td class="case" id="B6"></td><td class="case" id="B7"></td><td class="case" id="B8"></td><td class="case" id="B9"></td><td class="case" id="B10"></td><td class="case" id="B11"></td><td class="case" id="B12"></td><td class="case" id="B13"></td><td class="case" id="B14"></td><td class="case" id="B15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">C</th><td class="case" id="C1"></td><td class="case" id="C2"></td><td class="case" id="C3"></td><td class="case" id="C4"></td><td class="case" id="C5"></td><td class="case" id="C6"></td><td class="case" id="C7"></td><td class="case" id="C8"></td><td class="case" id="C9"></td><td class="case" id="C10"></td><td class="case" id="C11"></td><td class="case" id="C12"></td><td class="case" id="C13"></td><td class="case" id="C14"></td><td class="case" id="C15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">D</th><td class="case" id="D1"></td><td class="case" id="D2"></td><td class="case" id="D3"></td><td class="case" id="D4"></td><td class="case" id="D5"></td><td class="case" id="D6"></td><td class="case" id="D7"></td><td class="case" id="D8"></td><td class="case" id="D9"></td><td class="case" id="D10"></td><td class="case" id="D11"></td><td class="case" id="D12"></td><td class="case" id="D13"></td><td class="case" id="D14"></td><td class="case" id="D15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">E</th><td class="case" id="E1"></td><td class="case" id="E2"></td><td class="case" id="E3"></td><td class="case" id="E4"></td><td class="case" id="E5"></td><td class="case" id="E6"></td><td class="case" id="E7"></td><td class="case" id="E8"></td><td class="case" id="E9"></td><td class="case" id="E10"></td><td class="case" id="E11"></td><td class="case" id="E12"></td><td class="case" id="E13"></td><td class="case" id="E14"></td><td class="case" id="E15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">F</th><td class="case" id="F1"></td><td class="case" id="F2"></td><td class="case" id="F3"></td><td class="case" id="F4"></td><td class="case" id="F5"></td><td class="case" id="F6"></td><td class="case" id="F7"></td><td class="case" id="F8"></td><td class="case" id="F9"></td><td class="case" id="F10"></td><td class="case" id="F11"></td><td class="case" id="F12"></td><td class="case" id="F13"></td><td class="case" id="F14"></td><td class="case" id="F15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">G</th><td class="case" id="G1"></td><td class="case" id="G2"></td><td class="case" id="G3"></td><td class="case" id="G4"></td><td class="case" id="G5"></td><td class="case" id="G6"></td><td class="case" id="G7"></td><td class="case" id="G8"></td><td class="case" id="G9"></td><td class="case" id="G10"></td><td class="case" id="G11"></td><td class="case" id="G12"></td><td class="case" id="G13"></td><td class="case" id="G14"></td><td class="case" id="G15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">H</th><td class="case" id="H1"></td><td class="case" id="H2"></td><td class="case" id="H3"></td><td class="case" id="H4"></td><td class="case" id="H5"></td><td class="case" id="H6"></td><td class="case" id="H7"></td><td class="case" id="H8"></td><td class="case" id="H9"></td><td class="case" id="H10"></td><td class="case" id="H11"></td><td class="case" id="H12"></td><td class="case" id="H13"></td><td class="case" id="H14"></td><td class="case" id="H15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">I</th><td class="case" id="I1"></td><td class="case" id="I2"></td><td class="case" id="I3"></td><td class="case" id="I4"></td><td class="case" id="I5"></td><td class="case" id="I6"></td><td class="case" id="I7"></td><td class="case" id="I8"></td><td class="case" id="I9"></td><td class="case" id="I10"></td><td class="case" id="I11"></td><td class="case" id="I12"></td><td class="case" id="I13"></td><td class="case" id="I14"></td><td class="case" id="I15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">J</th><td class="case" id="J1"></td><td class="case" id="J2"></td><td class="case" id="J3"></td><td class="case" id="J4"></td><td class="case" id="J5"></td><td class="case" id="J6"></td><td class="case" id="J7"></td><td class="case" id="J8"></td><td class="case" id="J9"></td><td class="case" id="J10"></td><td class="case" id="J11"></td><td class="case" id="J12"></td><td class="case" id="J13"></td><td class="case" id="J14"></td><td class="case" id="J15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">K</th><td class="case" id="K1"></td><td class="case" id="K2"></td><td class="case" id="K3"></td><td class="case" id="K4"></td><td class="case" id="K5"></td><td class="case" id="K6"></td><td class="case" id="K7"></td><td class="case" id="K8"></td><td class="case" id="K9"></td><td class="case" id="K10"></td><td class="case" id="K11"></td><td class="case" id="K12"></td><td class="case" id="K13"></td><td class="case" id="K14"></td><td class="case" id="K15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">L</th><td class="case" id="L1"></td><td class="case" id="L2"></td><td class="case" id="L3"></td><td class="case" id="L4"></td><td class="case" id="L5"></td><td class="case" id="L6"></td><td class="case" id="L7"></td><td class="case" id="L8"></td><td class="case" id="L9"></td><td class="case" id="L10"></td><td class="case" id="L11"></td><td class="case" id="L12"></td><td class="case" id="L13"></td><td class="case" id="L14"></td><td class="case" id="L15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">M</th><td class="case" id="M1"></td><td class="case" id="M2"></td><td class="case" id="M3"></td><td class="case" id="M4"></td><td class="case" id="M5"></td><td class="case" id="M6"></td><td class="case" id="M7"></td><td class="case" id="M8"></td><td class="case" id="M9"></td><td class="case" id="M10"></td><td class="case" id="M11"></td><td class="case" id="M12"></td><td class="case" id="M13"></td><td class="case" id="M14"></td><td class="case" id="M15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">N</th><td class="case" id="N1"></td><td class="case" id="N2"></td><td class="case" id="N3"></td><td class="case" id="N4"></td><td class="case" id="N5"></td><td class="case" id="N6"></td><td class="case" id="N7"></td><td class="case" id="N8"></td><td class="case" id="N9"></td><td class="case" id="N10"></td><td class="case" id="N11"></td><td class="case" id="N12"></td><td class="case" id="N13"></td><td class="case" id="N14"></td><td class="case" id="N15"></td>
+                </tr>
+                <tr>
+                    <th class="casen" id="">O</th><td class="case" id="O1"></td><td class="case" id="O2"></td><td class="case" id="O3"></td><td class="case" id="O4"></td><td class="case" id="O5"></td><td class="case" id="O6"></td><td class="case" id="O7"></td><td class="case" id="O8"></td><td class="case" id="O9"></td><td class="case" id="O10"></td><td class="case" id="O11"></td><td class="case" id="O12"></td><td class="case" id="O13"></td><td class="case" id="O14"></td><td class="case" id="O15"></td>
+                </tr>
+            </table>
+            <span class="winOrLose"></span>  
+            <button type="button" id="startButton">Start</button><br> 
+        </div>
+    </main>
+    <script src="constants.js"></script>
+    <script src="batnav.js"></script>
+    <script src="iaplay.js"></script>
+</body>
+</html>

@@ -1,0 +1,851 @@
+<!--TITRE-->
+<!--SIGNATURE-->
+<!--ECRAN-G-->
+<!--ECRAN-D-->
+<!--BOUTONS "COMMENCER"-->
+<!--LISTE QUESTIONS/REPONSES-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" width="2000px" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="shortcut icon" href="img/onglet.gif">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <header>
+<!--TITRE-->
+    <div id="titre">
+      <h1 id="titre1">STARGATE</h1><br><h1 id="titre2">SG-1</h1>
+    </div>
+  </header>
+  <noscript>
+    <p style="position:relative;top:20px;color:red;font-weight: bold;">
+      ///JAVASCRIPT DESACTIVE\\\ javascript indispensable ! Veuillez activer javascript.
+    </p>
+</noscript>
+<!--BOUTONS "COMMENCER" GAUCHE-->    
+  <div id="box">
+    <div id="bcom1">
+      <table>
+        <tr>
+          <th><button type="button" class="bcomm" id="bcommo" onclick="window.location.href = 'quizz/oneill/oneill.html';">O'Neill</button></th>
+          <th><button type="button" class="bcomm" id="bcomm1" onclick="window.location.href = 'quizz/objets&technologies/objets&technologies.html';">Objets<br>&<br>technologies</button></th>
+        </tr> 
+        <tr>
+          <th><button type="button" class="bcomm" id="bcommc" onclick="window.location.href = 'quizz/carter/carter.html';">Carter</button></th>
+          <th><button type="button" class="bcomm" id="bcomm3" onclick="window.location.href = 'quizz/races&peuples/races&peuples.html';">Races<br>&<br>Peuples</button></th>
+        </tr>
+      </table>
+    </div>
+<!--SIGNATURE-->    
+    <div id="sign">
+      <h2><em>QUIZZ</em></h2>
+      <h5><em>Par&ensp;<span id="bys">ڳζαעξЯ</span></em></h5>
+      <!-- <div id="sevent" onclick="window.location.href = 'quizz/secret/secret.html';"> COMING 1.1.1
+        <span id="secret">Secret</span>
+      </div>    -->
+    </div>
+<!--BOUTONS "COMMENCER" DROITE-->
+    <div id="bcom2">
+      <table>
+        <tr> 
+          <th><button type="button" class="bcomm" id="bcomm2" onclick="window.location.href = 'quizz/personnages/personnages.html';">Personnages</button></th>
+          <th><button type="button" class="bcomm" id="bcommj" onclick="window.location.href = 'quizz/jackson/jackson.html';">Jackson</button></th>
+        </tr> 
+        <tr>     
+          <th><button type="button" class="bcomm" id="bcomm4" onclick="window.location.href = 'quizz/general/general.html';">General</button></th>
+          <th><button type="button" class="bcomm" id="bcommt" onclick="window.location.href = 'quizz/tealc/tealc.html';">Teal'c</button></th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- FIN DIV BOX -->
+<!--ECRAN-G-->  
+  <div id="ecrans">  
+    <div id="ecran1" class="">
+      <div class="code1">
+        <p>:/>SG COMMAND OPERATING SYSTEM</p>
+        <p>:/>SECURITY DATA</p>
+        <p>:/>ADMISSION BORDER</p>
+        <p>:/>LAUCH</p>
+      </div>
+      <table id="tabj">
+        <tr>
+          <th>JOUEURS</th>
+          <th>GRADE</th>
+          <th>SCORE</th>
+          <th>AFFECT.</th>
+        </tr>
+        <tr>
+          <th class="joueur" id="j1">NouveauJoueur</th>
+          <th class="grade" id="g1">></th>
+          <th class="pts" id="pts1">></th>
+          <th><button type="button" class="baff" id="baff1">Affecter</button></th>
+        </tr>
+        <tr>
+          <th class="joueur" id="j2">NouveauJoueur</th>
+          <th class="grade" id="g2">></th>
+          <th class="pts" id="pts2">></th>
+          <th><button type="button" class="baff" id="baff2">Affecter</button></th>
+        </tr>
+        <tr>
+          <th class="joueur" id="j3">NouveauJoueur</th>
+          <th class="grade" id="g3">></th>
+          <th class="pts" id="pts3">></th>
+          <th><button type="button" class="baff" id="baff3">Affecter</button></th>
+        </tr>
+      </table>
+      <div class="code1">
+        <p>:/><button type="button" class="bec1" id="brem">REINITIAL.</button></p>
+        <p>:/><button type="button" class="bec1" id="breg">REGLES</button></p>
+        <p>:/><button type="button" class="bec1" id="bfonc">FONCTIONNEMENT</button></p>
+        <p>:/><button type="button" class="bec1" id="bth">THEME</button></p>
+        <p>:/><button type="button" class="bec1" id="bmg" onclick="window.location.href = 'sgg/sgg.html';">MINI-JEU</button></p>
+      </div>    
+      <div id="ecreg">
+        <h3>REGLES</h3>
+        <p>
+          Chaque catégorie comporte 10 questions. Une bonne réponse vaut 1 point, ces points s'ajoutent et d'additionnent au score sur le tableau des joueurs. 
+          Un grade vous sera donné en fonction de votre score suivant ces règles :
+        </p>
+        <p>
+          Inférieur a 10 = Caporal<br>
+          Supérieur ou égal a 10 = Lieutenant<br>
+          Supérieur ou égal a 15 = Capitaine<br>
+          Supérieur ou égal a 20 = Major<br>
+          Supérieur ou égal a 30 = Colonel<br>
+          Egal a 40 = Général<br>
+        </p>
+        <p>
+          Cliquez sur "Nouveau joueur" dans le tableau et entrez votre nom dans l'infobulle. 
+          Cliquez ensuite sur "Affecter" sur la ligne correspondante pour charger un joueur. 
+          Enfin, cliquer sur la catégorie de votre choix pour commencer le quizz correspondant.
+        </p>
+        <p>BONNE CHANCE</p>
+        <button type="button" id="brreg">RETOUR</button>
+      </div>
+    </div>
+    <!-- FIN DIV ECRAN 1 -->
+    <div class="ecfon" id="ecfon1">
+      <h3>Inscription des joueurs et enregistrement </h3>
+      <p>
+        L'ecran de gauche sur l'index contient un tableau dynamique. Chaque ligne du tableau représente un joueur différent (N°1,N°2,N°3).
+        Cliquer sur "Nouveau joueur" permet d'ouvrir une infobulle (fonction "prompt") invitant a taper le nom du joueur.
+        Une fois le nom entré, il s'inscrit a la place de "Nouveau joueur", et il n'est plus possible d'interagir avec le nom inscrit jusque ce que 'REINITIAL' ('remove') soit utilisé, et se déclare en variable 'nom 1,2,3'.
+        Il s'enregistre dans le "Local Storage" sous forme de clé/valeur ('nouveau joueur1',nom1, etc...). 
+        Le local storage est dans ce cas utilisé pour conserver les données en cas de rechargement ou changement de page. (Nom, grade, score).
+        La clé 'nouveau joueur1' désigne la valeur 'nom1', nouvellement créee, qui est la variable contenant le nom du joueur n°1.
+      </p>
+      <p>
+        Un grade est également associé au joueur et s'inscrit dans la colonne "grades". Ce grade, relatif au score, est stocké dans une variable (gradej1,gradej2...) qui est définie par défaut sur 'Caporal'. 
+        Ce grade est associé a un portrait le représentant.
+        Le nombre de points (Une bonne réponse = 1 Point) est également affiché et correspond a la colonne "score" du joueur, Stocké dans une variable (scorej1, scorej2, scorej3), 
+        elle-meme la somme de quatre variables (scorej1ot, scorej1p, scorej1rp, scorej1g, etc...), 
+        correspondantes au score qui sera enregistré plus tard pour chacune des quatre catégories, 10 par catégorie, 40 points en tout au maximum. 
+        Les variables de score sont définie sur "0" par défaut.
+        Le local storage maintiendra et mettra a jour les variables entre les pages, et les données et la progression seront automatiquement enregistrés et affichés dans le tableau.
+      </p>
+      <p>
+        Une fois un joueur inscrit, le bouton 'affect' permettra de choisir le joueur qui jouera le quizz, affichant sur l'ecran de droite les infos relatives au joueur (nom, grade, portrait de grade).
+        Quand le joueur est affecté, les catégories deviennent cliquables et le jeu peut commencer.
+        Le bouton "REINITIAL." supprime entièrement les données dynamiques, du tableau, du joueur affecté ainsi que le local storage.
+      </p>
+      <button type="button" class="bfon" id="bfon1">ECHAP</button><button type="button" class="bfon" id="bfon2">SUIVANT</button>
+    </div>
+    <div class="ecfon" id="ecfon2">
+      <h3>Lancer et jouer un quizz</h3>
+      <p>
+        Le quizz se présente en 40 questions divisées par quatres catégories (10 questions chacunes).
+        Les catégories sont indisponibles par défaut (pointerevent = none). Il faut selectionner un joueur préalablement inscrit en l'affectant.
+      </p>
+      <p>
+        Une fois un joueur inscrit, un bouton "AFFECT" apparait sur la ligne correspondante. 
+        Ce bouton permet de selectionner le joueur désiré et affiche dynamiquement ses données sur l'écran de droite (nom, grade et une image correspondante au grade du joueur), sous forme d'une carte d'accès du SGC.
+        Il ajoute également au local storage la clé/valeur du joueur chargé ('joueurgo1', 'nom1') et le grade ('grade joueurgo1', 'gradej1').
+        Une fois chargé, les catégories deviennent accessibles, il est alors possible de commencer a jouer.
+      </p>
+      <p>
+        Une fois la catégorie lancé, la page change. Un bouton récapitulatif demandera confirmation pour continuer. Un bouton retour situé plus bas permet de revenir au menu principal. 
+        Appuyer sur le bouton recapitulatif le fera disparaitre pour dévoiler la première question.
+        Les pages Quizz contiennent une question et trois réponses dont une seule est valide. 
+        Des boutons de type "radio" situés devant les réponses permettent de valider le choix.
+        Un message dynamique vous indiquera si la réponse selectionnée est valide ou non.
+        Un bouton "suivant" situé plus bas permet de passer a la prochaine question mais est incliquable tant qu'une réponse n'aura pas étée selectionnée.
+        Pour chaque question, une image masquée par défaut faisant office d'indice peut etre dévoilée grace au bouton "Indice". Dévoiler l'indice ajoute -0.5 au score.
+      </p>
+      <p>
+        Après dix questions, le nom/grade ainsi que le score est affiché accompagné d'une image correspondant a un certain montant de points (meme modèle que les portrait de grade, mais sur 10 points).
+        Le score est enregistré dans le local storage (scorej1ot, scorej1p, scorej1rp, scorej1g...), et sera récupéré sur l'index pour afficher ou mettre a jour le score du joueur, ainsi que son grade.
+        Le bouton "Retour a la base" ramènera le joueur au menu principal.   
+      </p>
+      <button type="button" class="bfon" id="bfon3">SUIVANT</button>
+    </div>
+    <div class="ecfon" id="ecfon3">
+      <h3>Evolution et progression</h3>
+      <p>
+        Les scores et grades des joueurs, ainsi que la progression dans les catégories evolueront et seront sauvegardés au cour du jeu.
+        Une fois le joueur chargé, cliquer sur une catégorie amènera sur la page du quizz selectionné. 
+        Un message recapitulatif contenant nom et grade dynamiques demandera confirmation du lancement, 
+        un bouton "Retour" situé plus bas permet de revenir au menu principal.
+        Un fois lancé, le quizz devra etre accompli jusqu'au bout.
+      </p>
+      <p>
+        Une fois les dix questions passées, le total des points sera affiché, accompagné d'une image correspondante au score sur dix. 
+        A ce moment est ajouté au local storage le score pour ce joueur et sur cette catégorie (Clé/valeur = 'joueurgo1','scorej1ot', etc...), et sera additionné au score du joueur, et le grade mis a jour si possible. 
+        Cliquer sur le bouton "Retour" pour retourner au menu principal.
+      </p>
+      <p>
+        Un fois une catégorie accomplie (1 point minimum), le bouton correspondant changera d'état (transparence et image "declassified"), 
+        et ne sera plus cliquable, rendant la catégorie inaccessible et non rejouable.
+        Les points accumulés a l'issue des quizzs s'additionnent et determinent le grade du joueur.
+      </p>
+      <p>
+        Le grade evoluera en fonction du score suivant ces règles :
+      </p>
+      <p>
+        Inférieur a 10 = Caporal<br>
+        Supérieur ou égal a 10 = Lieutenant<br>
+        Supérieur ou égal a 15 = Capitaine<br>
+        Supérieur ou égal a 20 = Major<br>
+        Supérieur ou égal a 30 = Colonel<br>
+        Egal a 40 = Général<br>
+      <p>
+        Quand les quatres catégories ont étées accomplies, le quizz est terminé pour le joueur en question. 
+        Si 40 points ont étés accumulés, un quizz secret sera débloqué et un effet visuel aura lieu sur le titre et la signature. 
+        Une fois que les trois joueurs ont terminé leur quizzs respectifs, seul "REINITIAL." permettra de liberer les emplacements de joueurs disponibles, ainsi que rendre les catégories a nouveau disponibles.
+      </p>
+      <button type="button" class="bfon" id="bfon4">SUIVANT</button>
+    </div>
+    <div class="ecfon" id="ecfon4">
+      <h3>Table des grades</h3>
+      <table id="tbg">
+        <tr>
+          <th><img src="img/tgrade/caporal.jpg" alt=""></th>
+          <th><img src="img/tgrade/lieutenant.jpg" alt=""></th>
+        </tr>
+        <tr>
+          <th>&lt; 10 = Caporal</th>
+          <th>≥ 10 = Lieutenant</th>
+        </tr>  
+        <tr>  
+          <th><img src="img/tgrade/capitaine.jpg" alt=""></th>
+          <th><img src="img/tgrade/major.jpg" alt=""></th>
+        </tr>  
+        <tr>  
+          <th>≥ 15 = Capitaine</th>
+          <th>≥ 20 = Major</th>
+        </tr>
+        <tr>
+          <th><img src="img/tgrade/colonel.jpg" alt=""></th>
+          <th><img src="img/tgrade/general.jpg" alt=""></th> 
+        </tr>
+        <tr>
+          <th>≥ 30 = Colonel</th>
+          <th>= 40 = Général</th>
+        </tr>
+      </table>
+      <button type="button" class="bfon" id="bfon5">RETOUR</button>
+    </div>
+      <!-- FIN DIV ECRAN GAUCHE -->
+<!--ECRAN-D-->            
+    <div id="ecran2" class="">
+      <div class="code2">
+        <p>:/>SG COMMAND OPERATING SYSTEM
+        <p>:/>SECURITY DATA</p>
+        <p>:/>ACTUAL PROFIL</p>
+        <p>:/>LAUCH</p>
+      </div>
+      <p id="grd"></p>
+      <p id="jlauch"></p>
+      <div id="card"></div>
+      <p class="code2">:/></p>
+      <img id="logo" src="img/logo.gif" alt="">
+    </div>
+    <!-- FIN DIV ECRAN D -->
+  </div>
+  <!-- FIN DIV ECRANS -->
+  <script src="index.js"></script>
+  <script src="save.js"></script>
+</body>
+</html>
+<!--LISTE QUESTIONS/REPONSES-->
+
+<!-- OBJETS & TECHNOLOGIES
+
+Question 1
+Quelle est la prononciation du nom de l'arme de poing Goa'uld ?
+Zak'tik'nel
+Zal'kin'tel
+Zat'nik'tel
+
+Question 2
+Quelle est l'utilité du dispositif "Clé de voûte" ?
+Contrôler le climat
+Faciliter l'agriculture
+Combattre les Goa'uld
+
+Question 3
+Quel est le nom du vaisseau Goa'uld de type bombardier ?
+Ha'tak
+Planeur de la mort
+Al'kesh
+
+Question 4
+Dans l'épisode "Invasion", les aliens ont un dispositif placé sur le torse. A quoi sert-il ?
+A lire dans les pensées
+A changer d'apparence
+A devenir invisible
+
+Question 5
+Qu'est-ce que "le Vengeur", mis au point par le Dr Felger ?
+Un vaisseau spatial
+Un virus informatique
+Une arme laser
+
+Question 6
+A quoi sert l'appareil que son inventeur Machelo utilise sur Daniel Jackson ?
+Il interverti l'esprit de deux corps
+Il modifie L'ADN
+A controler l'esprit
+
+Question 7
+A quoi ressemble le San Greal, ou saint-Graal ?
+Une grande épée
+Une joyau rouge
+Une coupe
+
+Question 8
+Quel est le sigle de l'extracteur de potentiel de point zero ?
+EPZP
+E2PP
+E2PZ
+
+Question 9 
+Quel objet l'oncle de Daniel Jackson, Nicolas Ballard, a t-il regardé, qui l'a téléporté sur une autre planète ?
+Un Crane de cristal
+Une statue
+Un miroir
+
+Question 10
+Comment nomme-ton les robots d'exploration envoyés par le SG-C ?
+F.A.L.P.
+T.A.R.C.
+M.A.L.P.
+
+
+PERSONNAGES
+
+Question 1
+Comment s'appelle le fils d'Apophis ?
+Marduk
+Klorel
+Skaara
+
+Question 2
+Avec qui Selmac a t-il accompli la symbiose ?
+Jacob Carter
+Hank Landry 
+Rodney Mckay
+
+Question 3
+Comment s'appelle le personnage répétant sans cesse le mot "Contraya" ?
+Orlin
+Urgo
+Martouf
+
+Question 4
+Quel est la dénomination du "dernier né" réplicateur humanoide qui menacera la galaxie ?
+N°3
+N°5
+N°6
+
+Question 5
+Qui sont les trois Grand maitre Goa'uld présent au traité avec les Asgards dans l'épisode "Diplomatie" ?
+Yu, Niirti et Chronos
+Baal, Apophis et Camulus
+Anubis, Osiris et Sokaar
+
+Question 6
+Qui est la fille de Vala Mal doran ?
+Le commandant des armées Oris
+Une Tok'Ra
+Une contrebandière
+
+Question 7
+De quel pays de la planète Langara Jonas Quinn est-il originaire ?
+Terrania
+Fédération des Andaris
+Kelowna
+
+Question 8
+Quel poste occupe Caroline Lam ?
+Major de l'USAF
+Diplomate
+Medecin-Chef
+
+Question 9
+En quelle année Ernest Littlefield a t-il traversé la porte des étoiles ?
+1939
+1945
+1955
+
+Question 10
+A qui Samantha Carter a t-elle donné le chat nommmé schrodinger ?
+Martouf
+Shi'fu
+Narim
+
+RACE & PEUPLE
+
+Question 1
+Quelle est la race connue pour maitriser l'invisibilité ?
+Les Goa'uld
+Les Kelonnien
+Les Nox
+
+Question 2
+Quelle espèce invisible a l'oeil nu a pour projet l'élimination de tout les hôtes des Goa'uld ?
+Les Nox
+Les Ritous
+Les Asgards
+
+Question 3
+Quel peuple, bien que similaire au Goa'uld, cherche a abattre leur système de domination ?
+La Tok'Ra
+Les réplicateurs
+Les Oris
+
+Question 4
+A quelle race appartient le mystérieux lieutenant Tyler de l'épisode "Le cinquième homme" ?
+Les Furlings
+Les Eurondiens
+Les Réols
+
+Question 5
+Quelle race tente d'anéantir la terre par la stérilisation de sa population ?
+Les Gadmeers
+Les Aschens
+Les Jaffas
+
+Question6
+A quelle race appartient Ayiana ?
+Les Anciens
+Le peuple de Tagrea
+Les Nox
+
+Question7
+Quelle sont les deux races organisant des courses de vaisseaux dans leur système ?
+Les Asgard et les Abydossiens
+Les Goa'uld et la Tok'Ra
+Les Serrakins et les Hébridiens
+
+Question 8
+Quel race protège les cimmériens grâce a L'Œil de pierre ?
+Les Nox 
+Les Asgards
+Les Anciens
+
+Question 9
+Quel peuple a inventé la trétonine ?
+Les Bedrosiens
+Les Pangariens
+Les Unas
+
+Question 10
+Quel peuple sensible a la lumière du soleil SG-1 aide t-il a s'installer sur une planètes au conditions propices ?
+Les Enkarans
+Les Abydossiens
+Les Réplicateurs
+
+General
+
+Question 1
+Suite a une éruption solaire perturbant le fonctionnement de la porte des étoiles, en quelle année Sg-1 se retrouve t-il propulsé ?
+1997
+1969
+2010
+
+Question 2
+Quel nom porte le chien de Robert Kinsey ?
+Starsky
+Sparky
+Oscar
+
+Question 3
+Quel est le dispositif utilisé pour signifier au SG-C l'ouverture de l'iris ?
+H.B.O.
+C.M.O.
+G.D.O.
+
+Question 4
+Quelle phrase les Oris répètent-il religieusement sans cesse ?
+Les Oris sont grand
+Gloire au Oris
+Loués soit les Oris
+
+Question 5
+De quelle manière SG-1 détruit-il la flotte d'Apophis ?
+En utilisant le siège des Anciens
+Dans une bataille spatiale
+En faisant exploser une étoile
+
+Question 6 
+Pourquoi Oma Desala a-t-elle aidé Anubis a effectuer l'ascension ?
+Elle a eu pitié de lui 
+Elle s'ennuyait
+Anubis l'a bernée
+
+Question 7
+A quel corps de métier appartient l'équipe de SG-1 dans l'hallucination de Teal'c, dans l'episode 'La porte des rêves' ?
+La police
+Les pompiers
+Les ambulanciers
+
+Question 8
+Sur quelle planète fut fondée la toute première colonie Ancienne ?
+La Terre 
+Praclarush Taonas
+Dakara
+
+Question 9 
+Quelle organisation a tenté de pousser le général Hammond a quitter ses fonctions au SG-C en menaçant sa famille ?
+L'USAF
+La CIA
+Le NID
+
+Question 10
+De quel appareil Cameron Mitchell était il pilote avant d'intégrer SG-1 ?
+F-302
+X-303
+F-301 -->
+
+
+
+
+<!--DIVERS
+
+Question1
+Dans l'épisode "Secrets d'état", les pays représentés sont les Etats-Unis, la Russie, la Chine, l'Angleterre et ?
+L'Allemagne
+l'Australie
+La France
+
+Question2
+Qui, 'l'entité', de l'épisode du même nom, choisit-elle pour s'échapper des ordinateurs du SG-C ?
+George Hammond
+Walter Harriman
+Samantha Carter
+
+Question3
+De quelle couleur sont les "nutriments" préféré de Thor ?
+Bleu
+Jaune
+Rouge
+
+Question4
+Les Asgard considèrent l'humanité comme étant ?
+La cinquième race
+La seconde évolution
+Le troisième peuple
+
+Question5
+Selon carter, combien de canons Tollan faut t-il pour défendre efficacement la terre ?
+12
+38
+72
+
+Question6
+Sur la planète Orban, qu'est ce qu'un Urrone ?
+Un enfant a qui l'on implante des nanite dans le cerveau
+Une machine qui force l'éducation des enfants
+Un enfant amélioré et cloné
+
+Question7
+Dans quelle galaxie est situé la planète Asgard Othala ?
+La voie lactée
+Ida
+Pégase
+
+Question8
+Quelle est l'organisation criminelle qui prend un essor fulgarant après la chute des grands maitres ?
+Le Syndicat
+L'alliance Luxienne
+Confédération Aschen
+
+Question9
+Pourquoi les Anciens ont quitté leur planète natale il ya 80 milions d'années ?
+Leur planète mourrait
+Ils sont partis en conquête
+Ils ont étés chassée par les Oris 
+
+Question10
+Dans l'épisode 'Revelations', qu'est-ce que le scientifique Asgard Heimdall est charger de préserver ?
+Un ancêtre Asgard en stase
+Une arme anti-réplicateur
+Un nouveau système de propulsion
+
+Question11
+Quel Goa'uld mineur le général Landry fait-il plier grace a la faim ?
+Zipacna
+Nerus
+Bo'rel
+
+-->
+
+<!-- SAMANTHA CARTER
+
+Question1
+Quel est le grade de Sam au début de l'aventure ?
+Capitaine
+Major
+Lieutenant-colonel
+
+Question2
+Quel scientifique empoté tombe amoureux de Sam ?
+Jay Felger
+Orlin
+Rodney Mckay
+
+Question3
+Comment s'appelle le petit ami de Sam ?
+Jack O'Neill
+Pete Shanahan
+Narim
+
+Question4
+Quel être ayant accompli l'ascension tombe amoureux de Sam ?
+Orlin
+Jay Felger 
+Rodney Mckay
+
+Question5
+Quel Tok'Ra prend possession du corps de Sam ?
+Jolinar
+Egeria
+Selmac
+
+Question6
+De Qui Sam est elle éprise sans pouvoir concrétiser ses sentiments ?
+Daniel Jackson
+Jack O'Neill
+Teal'c
+
+Question7
+Quel est le grade de Sam a la fin de l'aventure ?
+Lieutenant-colonel
+Major
+Colonel 
+
+Question8
+Selon Sam, le fait que ses organes reproducteurs soient situés a l'intérieur de son corps de signifie pas :
+Qu'elle est capitaine 
+Qu'elle est inférieure
+Qu'elle est belle
+
+Question9
+Quel scientifique alergique au citron tombe amoureux de Sam ?
+Rodney Mckay
+Jay Felger
+Orlin
+
+Question10
+Quelle est la couleur de la robe de sam dans l'épisode "dimension parallèle" ?
+Bleu
+Rouge
+Noire
+
+-->
+
+<!-- JACK ONEILL
+
+Question1
+Comment s'appellait le fils de Jack ?
+Harry
+Todd
+Charlie
+
+Question2
+Quelle est la réplique de Jack quand il apprend qu'Anubis a été piégé sur une planète gelée ?
+"C'est rafraichissant !"
+"Vive le vent d'hiver !"
+"Ca jette un froid..."
+
+Question3
+Quelle est l'activité préférée de Jack ?
+Le Football
+Le poker
+La pêche
+
+Question4
+De quelle race le reférentiel de connaissance est par deux fois téléchargé dans la mémoire de jack ?
+Les Asgard
+Les Nox
+Les Anciens
+
+Question5
+Dans la ligne de temps alternative de l'épisode "Retour vers le futur", comment se nomme le bateau de Jack ?
+Le Bart
+Le Homer
+Le Duff
+
+Question6
+Avec quel personnage, lui évoquant son fils, jack se lie t'il d'amitié lors de sa toute première mission ?
+Skaara
+Kasuf
+Râ
+
+Question7
+Dans l'épisode "L'histoire sans fin", a quel sport Jack joue t'il avec teal'c a travers la porte des étoiles ?
+Au base-Ball
+Au tir sportif
+Au golf 
+
+Question8
+Après la pluie de météorite sur la planète Edora, Jack reste bloqué sur la planète et se lie sentimentalement avec une femme. Comment s'appelle t-elle ?
+Laira
+Allina
+Neeva
+
+Question 9
+Ou et lors de quelle guerre Jack fut-il prisonnier au cours de sa carrière militaire ?
+Saigon, guerre du Viet-Nam
+Irak, guerre du golf
+Damas, guerre de Syrie
+
+Question10
+Quelle est la série préférée de Jack ?
+Les Simpsons
+Columbo
+Whormhole X-trem
+
+-->
+
+<!-- DANIEL Jackson
+
+Question1
+Comment s'appelle la femme de Daniel ?
+Shan'auc
+Sha're
+Ishta
+
+Question2
+A l'origine, quel est la profession de Daniel ?
+Militaire
+Explorateur
+Archéologue
+
+Question3
+De quoi Daniel meurt au cours de l'aventure ?
+Il est abattu
+Dans une explosion
+Par irradiation
+
+Question4
+Qui est l'amie de Daniel qui deviendra plus tard le goa'uld Osiris ?
+Catherine Langford
+Sarah Gardner
+Vala Mal Doraan
+
+Question5
+Comment d'appelle le unas devenu l'ami de Daniel ?
+Harlan
+Chaka
+Travell 
+
+Question6
+Quel est le nom de la fausse identité de Daniel dans l'épisode "Rencontre au sommet"?
+Karroc
+Lothai
+Jarren 
+
+Question7
+Dans l'épisode "Le vaisseau fantôme", l'esprit de combien de personnes envahissent le corps de Daniel ?
+8
+12
+15
+
+Question8
+Dans l'épisode "Pouvoir absolu", quelle ville est anénatie sous les ordres de Daniel ?
+Washington
+Paris
+Moscou
+
+Question9
+Qu'est-ce qui motive Daniel a rejoindre SG-1 au tout début de l'aventure ?
+Vaincre les Goa'uld
+Retrouver Sha're
+Le gout de l'aventure
+
+Question10
+Selon Daniel, que vont chercher a regarder les russes en ce qui concerne Samantha Carter ?
+Ses yeux
+Ses seins
+Ses fesses-->
+
+
+<!-- --TEAL'C--
+
+Question 1
+Comment s'appelle le maitre et mentor de teal'c ?
+Gerak
+Bra'tac
+Tanith
+
+Question 2
+De quelle planète Teal'c est t-il originaire ?
+Abydos
+Chulak
+Dakara
+
+Question3
+De quel grand maitre Teal'c était-il le primat ?
+Apophis
+Chronos
+Sokaar
+
+Question4
+Quelle est le début de la blague que teal'c raconte a ses partenaires ?
+Un garde serpent, un garde cheval et un garde Setesh se retrouvent sur une planète neutre...
+Un humain, un goa'uld et un asgard se retrouve dans un vaisseau...
+Un soldat Jaffa, un primat et un grand maitre se rencontrent sur une base...
+
+Question 5
+Quel est le symbole d'aphophis, dont le front de teal'c est marqué ?
+Un aigle
+Un oiseau
+Un serpent
+
+Question 6
+Quel est la réplique d'approbation culte de teal'c ?
+C'est exact
+Affirmatif
+En effet
+
+Question 7
+Comment s'appelle la méditation Jaffa que teal'c pratique régulièrement ?
+Kenlo'reem
+Kelno'reem
+Klemo'reen
+
+Question 8
+Quel grand maitre Goa'uld a tué le père de Teal'c ?
+Baal
+Anubis
+Chronos
+
+Question 9
+Pour Teal'c, qui est Krysta ?
+Sa belle-fille
+Une relation intime
+Sa voisine de palier
+
+Question 10
+Comment s'appelle le fils de teal'c ?
+Rak'nor
+Tolok
+Rya'c -->
+

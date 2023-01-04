@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bricoles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- CONTROLE DIV -->
+    <div id="areaControl">        
+        <div class="mouseEvent">
+            <div id="controlx"></div>
+            <div id="controly"></div>
+            <span class="controlDisplay">cliquer pour prendre</span>
+        </div>
+        <script src="control.js"></script>
+    </div>
+<!-- RANDMOVE DIV -->
+<div id="areaRandmove">
+    <div id="areablue"></div>
+    <div id="areared"></div>
+    <div class="moveEvent">
+        <div id="displayMovex"></div>
+        <div id="displayMovey"></div>
+    </div>
+    <script src="randmove.js"></script>
+</div>
+<!--CONSOLE-->  
+    <div id="console">
+        <div id="box" class="box">
+            <table id="boutons">
+                <tr>
+                    <th><button type="button" id="bte" class="bt">ECRAN</button></th>
+                    <th><button type="button" id="btr" class="bt">RESET</button></th>
+                    <th><button type="button" id="btf" class="bt">FONCT</button></th>
+                </tr>
+                <tr>
+                    <th><button type="button" id="bt1" class="bt">T1</button></th>
+                    <th><button type="button" id="bt2" class="bt">T2</button></th>
+                    <th><button type="button" id="bt3" class="bt">T3</button></th>
+                </tr>
+                <tr>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                </tr>
+                <tr>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                    <th><button type="button" id="" class="bt">---</button></th>
+                </tr>
+            </table>
+        </div>
+            <div id="ecran" class="ecran">
+                <table border="1" id="tab">
+                    <tr>
+                        <th>JOUEURS</th>
+                        <th>SCORE</th>
+                    </tr>
+                    <tr>
+                        <th class="joueur" id="j1">NouveauJoueur</th>
+                        <th class="score" id="s1"><button type="button" id="bcj1" class="bcj">Charger J.</button></th>
+                    </tr>
+                    <tr>
+                        <th class="joueur" id="j2">NouveauJoueur</th>
+                        <th class="score" id="s2"><button type="button" id="bcj2" class="bcj">Charger J.</button></th>
+                    </tr>
+                    <tr>
+                        <th class="joueur" id="j3">NouveauJoueur</th>
+                        <th class="score" id="s3"><button type="button" id="bcj3" class="bcj">Charger J.</button></th>
+                    </tr>
+                </table>
+                <p id="affich"></p>
+            </div>
+        
+        <script src="console.js"></script>
+    </div>
+<!--CLOCK-->
+    <div id="horloge">
+        <div id="boxcad">
+            <div id="cadran1">
+                <div id='ahrs1'>00</div>
+                <div id='amin1'>00</div>
+                <div id='asec1'>00</div>
+                <div id='acen1'>00</div>
+            </div>
+            <div id="cadran2">
+                <div id='ahrs2'>00</div>
+                <div id='amin2'>00</div>
+                <div id='asec2'>00</div>
+            </div>
+            <div class="" id="bbtn">
+                <button type="button" class="btn" id="bh">h+1</button>
+                <button type="button" class="btn" id="bm">m+1</button>
+                <button type="button" class="btn" id="bs">s+1</button>
+                <button type="button" class="btn" id="bc">c+1</button>
+            </div> 
+        </div>
+        <button type="button" class="btn" id="blauch">Lancer</button>  
+        <button type="button" class="btn" id="bpau">Pause</button>  
+        <button type="button" class="btn" id="brem">Remove</button>
+        <script src="clock.js"></script>
+    </div>
+<!-- FRAME -->
+<div class="frame">
+    <table id="gridframe">
+        <caption>&larr; : Left | &rarr; : Right | &darr; : Hello</caption>
+        <tr>
+            <th class="casen" id="">v</th><th class="casen" id="">1</th><th class="casen" id="">2</th><th class="casen" id="">3</th><th class="casen" id="">4</th><th class="casen" id="">5</th><th class="casen" id="">6</th><th class="casen" id="">7</th><th class="casen" id="">8</th><th class="casen" id="">9</th><th class="casen" id="">10</th><th class="casen" id="">11</th><th class="casen" id="">12</th><th class="casen" id="">13</th><th class="casen" id="">14</th><th class="casen" id="">15</th><th class="casen" id="">16</th>
+        </tr>
+        <tr>
+            <th class="casen" id="">A</th><th class="case" id="A1"></th><th class="case" id="A2"></th><th class="case" id="A3"></th><th class="case" id="A4"></th><th class="case" id="A5"></th><th class="case" id="A6"></th><th class="case" id="A7"></th><th class="case" id="A8"></th><th class="case" id="A9"></th><th class="case" id="A10"></th><th class="case" id="A11"></th><th class="case" id="A12"></th><th class="case" id="A13"></th><th class="case" id="A14"></th><th class="case" id="A15"></th><th class="case" id="A16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">B</th><th class="case" id="B1"></th><th class="case" id="B2"></th><th class="case" id="B3"></th><th class="case" id="B4"></th><th class="case" id="B5"></th><th class="case" id="B6"></th><th class="case" id="B7"></th><th class="case" id="B8"></th><th class="case" id="B9"></th><th class="case" id="B10"></th><th class="case" id="B11"></th><th class="case" id="B12"></th><th class="case" id="B13"></th><th class="case" id="B14"></th><th class="case" id="B15"></th><th class="case" id="B16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">C</th><th class="case" id="C1"></th><th class="case" id="C2"></th><th class="case" id="C3"></th><th class="case" id="C4"></th><th class="case" id="C5"></th><th class="case" id="C6"></th><th class="case" id="C7"></th><th class="case" id="C8"></th><th class="case" id="C9"></th><th class="case" id="C10"></th><th class="case" id="C11"></th><th class="case" id="C12"></th><th class="case" id="C13"></th><th class="case" id="C14"></th><th class="case" id="C15"></th><th class="case" id="C16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">D</th><th class="case" id="D1"></th><th class="case" id="D2"></th><th class="case" id="D3"></th><th class="case" id="D4"></th><th class="case" id="D5"></th><th class="case" id="D6"></th><th class="case" id="D7"></th><th class="case" id="D8"></th><th class="case" id="D9"></th><th class="case" id="D10"></th><th class="case" id="D11"></th><th class="case" id="D12"></th><th class="case" id="D13"></th><th class="case" id="D14"></th><th class="case" id="D15"></th><th class="case" id="D16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">E</th><th class="case" id="E1"></th><th class="case" id="E2"></th><th class="case" id="E3"></th><th class="case" id="E4"></th><th class="case" id="E5"></th><th class="case" id="E6"></th><th class="case" id="E7"></th><th class="case" id="E8"></th><th class="case" id="E9"></th><th class="case" id="E10"></th><th class="case" id="E11"></th><th class="case" id="E12"></th><th class="case" id="E13"></th><th class="case" id="E14"></th><th class="case" id="E15"></th><th class="case" id="E16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">F</th><th class="case" id="F1"></th><th class="case" id="F2"></th><th class="case" id="F3"></th><th class="case" id="F4"></th><th class="case" id="F5"></th><th class="case" id="F6"></th><th class="case" id="F7"></th><th class="case" id="F8"></th><th class="case" id="F9"></th><th class="case" id="F10"></th><th class="case" id="F11"></th><th class="case" id="F12"></th><th class="case" id="F13"></th><th class="case" id="F14"></th><th class="case" id="F15"></th><th class="case" id="F16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">G</th><th class="case" id="G1"></th><th class="case" id="G2"></th><th class="case" id="G3"></th><th class="case" id="G4"></th><th class="case" id="G5"></th><th class="case" id="G6"></th><th class="case" id="G7"></th><th class="case" id="G8"></th><th class="case" id="G9"></th><th class="case" id="G10"></th><th class="case" id="G11"></th><th class="case" id="G12"></th><th class="case" id="G13"></th><th class="case" id="G14"></th><th class="case" id="G15"></th></th><th class="case" id="G16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">H</th><th class="case" id="H1"></th><th class="case" id="H2"></th><th class="case" id="H3"></th><th class="case" id="H4"></th><th class="case" id="H5"></th><th class="case" id="H6"></th><th class="case" id="H7"></th><th class="case" id="H8"></th><th class="case" id="H9"></th><th class="case" id="H10"></th><th class="case" id="H11"></th><th class="case" id="H12"></th><th class="case" id="H13"></th><th class="case" id="H14"></th><th class="case" id="H15"></th></th><th class="case" id="H16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">I</th><th class="case" id="I1"></th><th class="case" id="I2"></th><th class="case" id="I3"></th><th class="case" id="I4"></th><th class="case" id="I5"></th><th class="case" id="I6"></th><th class="case" id="I7"></th><th class="case" id="I8"></th><th class="case" id="I9"></th><th class="case" id="I10"></th><th class="case" id="I11"></th><th class="case" id="I12"></th><th class="case" id="I13"></th><th class="case" id="I14"></th><th class="case" id="I15"></th></th><th class="case" id="I16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">J</th><th class="case" id="J1"></th><th class="case" id="J2"></th><th class="case" id="J3"></th><th class="case" id="J4"></th><th class="case" id="J5"></th><th class="case" id="J6"></th><th class="case" id="J7"></th><th class="case" id="J8"></th><th class="case" id="J9"></th><th class="case" id="J10"></th><th class="case" id="J11"></th><th class="case" id="J12"></th><th class="case" id="J13"></th><th class="case" id="J14"></th><th class="case" id="J15"></th><th class="case" id="J16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">K</th><th class="case" id="K1"></th><th class="case" id="K2"></th><th class="case" id="K3"></th><th class="case" id="K4"></th><th class="case" id="K5"></th><th class="case" id="K6"></th><th class="case" id="K7"></th><th class="case" id="K8"></th><th class="case" id="K9"></th><th class="case" id="K10"></th><th class="case" id="K11"></th><th class="case" id="K12"></th><th class="case" id="K13"></th><th class="case" id="K14"></th><th class="case" id="K15"></th><th class="case" id="K16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">L</th><th class="case" id="L1"></th><th class="case" id="L2"></th><th class="case" id="L3"></th><th class="case" id="L4"></th><th class="case" id="L5"></th><th class="case" id="L6"></th><th class="case" id="L7"></th><th class="case" id="L8"></th><th class="case" id="L9"></th><th class="case" id="L10"></th><th class="case" id="L11"></th><th class="case" id="L12"></th><th class="case" id="L13"></th><th class="case" id="L14"></th><th class="case" id="L15"></th><th class="case" id="L16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">M</th><th class="case" id="M1"></th><th class="case" id="M2"></th><th class="case" id="M3"></th><th class="case" id="M4"></th><th class="case" id="M5"></th><th class="case" id="M6"></th><th class="case" id="M7"></th><th class="case" id="M8"></th><th class="case" id="M9"></th><th class="case" id="M10"></th><th class="case" id="M11"></th><th class="case" id="M12"></th><th class="case" id="M13"></th><th class="case" id="M14"></th><th class="case" id="M15"></th><th class="case" id="M16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">N</th><th class="case" id="N1"></th><th class="case" id="N2"></th><th class="case" id="N3"></th><th class="case" id="N4"></th><th class="case" id="N5"></th><th class="case" id="N6"></th><th class="case" id="N7"></th><th class="case" id="N8"></th><th class="case" id="N9"></th><th class="case" id="N10"></th><th class="case" id="N11"></th><th class="case" id="N12"></th><th class="case" id="N13"></th><th class="case" id="N14"></th><th class="case" id="N15"></th><th class="case" id="N16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">O</th><th class="case" id="O1"></th><th class="case" id="O2"></th><th class="case" id="O3"></th><th class="case" id="O4"></th><th class="case" id="O5"></th><th class="case" id="O6"></th><th class="case" id="O7"></th><th class="case" id="O8"></th><th class="case" id="O9"></th><th class="case" id="O10"></th><th class="case" id="O11"></th><th class="case" id="O12"></th><th class="case" id="O13"></th><th class="case" id="O14"></th><th class="case" id="O15"></th></th><th class="case" id="O16"></th>
+        </tr>
+        <tr>
+            <th class="casen" id="">P</th><th class="case" id="P1"></th><th class="case" id="P2"></th><th class="case" id="P3"></th><th class="case" id="P4"></th><th class="case" id="P5"></th><th class="case" id="P6"></th><th class="case" id="P7"></th><th class="case" id="P8"></th><th class="case" id="P9"></th><th class="case" id="P10"></th><th class="case" id="P11"></th><th class="case" id="P12"></th><th class="case" id="P13"></th><th class="case" id="P14"></th><th class="case" id="P15"></th><th class="case" id="P16"></th>
+        </tr>
+    </table>
+<button type="button" class="btnframe" id="bcolor">COLOR</button>
+<button type="button" class="btnframe" id="bremov">remove</button>
+<script src="frame.js"></script>
+</div>
+<!-- VS -->
+
+<!-- -- -->
+<script src="vs.js"></script>
+<script src="control2.js"></script>
+<script src="snake.js"></script>
+<!-- -- -->
+</body>
+</html>

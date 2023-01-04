@@ -1,0 +1,201 @@
+/* TAVERN */
+@font-face{font-family: 'medtitle';src: url(font/medtitle.ttf);}
+/* @font-face{font-family: 'script';src: url(font/script.ttf);} */
+@font-face{font-family: 'med';src: url(font/med.ttf);}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    height: 100vh;
+    overflow: hidden;
+}
+/* CHARACTER */
+.innkeeper{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/innkeeper.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterScale 2s linear alternate infinite;
+}
+.rogueBack{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/rogueBack.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterScale 2s linear alternate infinite;
+}
+.rogue{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/rogue.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterScale 2s linear alternate infinite;
+}
+.merchant{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/merchant.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterScale 2s linear alternate infinite;
+}
+.troll{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/troll.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterScale 2s linear alternate infinite;
+}
+.gobelin{
+    position: absolute;
+    height: 800px;
+    width: 900px;
+    background: url(img/character/gobelin.png)no-repeat;
+    transition: 1s;
+    transform: translate(-300%,0%);
+    animation: characterGobelin 2s linear alternate infinite;
+}
+@keyframes characterGobelin{
+    0%{scale: 1;}
+    5%{transform: translate(50%,30%);}
+    10%{transform: translate(50%,31%);}
+    15%{transform: translate(50%,30%);}
+    20%{transform: translate(50%,31%);}
+    25%{transform: translate(50%,30%);}
+    30%{transform: translate(50%,31%);}
+    50%{scale: 1.0070;}
+    100%{scale: 1;}
+}
+@keyframes characterScale{
+    0%{scale: 1;}
+    50%{scale: 1.002;}
+    100%{scale: 1;}
+}
+/* DISPLAY SCREEN DIALOGUE */
+.display{
+    position: absolute;
+    height: 700px;
+    top: -30px;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    color: beige;
+    transition: 1s;
+    /* background-color: red; */
+    transform: translate(110%,0%);
+    text-shadow: 5px 5px 5px black;
+    z-index: 1;
+}
+.header{
+    height: 200px;
+    width: 900px;
+    border: 5px double brown;
+    border-radius: 20%;
+    background-image: url(img/title.jpg);
+}
+.displayTitle{
+    font-family: 'medtitle';
+    letter-spacing: 5px;
+}
+.displayParagraph{
+    font-family: 'med';
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.displayDialogue{
+    width: 1000px;
+    margin-left: -200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'med';
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.displayAnswers,ul,li{
+    margin-left: -300px;
+    font-family: 'med';
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+/* ANSWERS */
+.disabled{
+    list-style: none;
+    color: grey;
+    pointer-events: none;
+}
+.answer1,.answer2,.answer3{
+    cursor: pointer;
+    list-style: none;
+    color: beige;
+    pointer-events: auto;
+}
+.answer1:hover,.answer2:hover,.answer3:hover{
+    color: red;
+    animation: scaleRep 1s linear infinite;
+}
+@keyframes scaleRep{
+    0%{scale: 1}
+    50%{scale: 1.1}
+    100%{scale: 1}
+}
+/* BUTTONS */
+.displayButtons{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: 70px auto;
+    margin-left: 100px;
+    
+}
+.displayButton{
+    height: 30px;
+    width: 50px;
+    margin-top: 30px;
+    border: none;
+    background: transparent;
+    color: beige;
+    font-family: 'med';
+    font-size: 1.3em;
+    cursor: pointer;
+    list-style: none;
+}
+.displayButton:hover{
+    color: red;
+    animation: buttons 1s linear infinite;
+}
+@keyframes buttons{
+    0%{scale: 1}
+    50%{scale: 1.1}
+    100%{scale: 1}
+}
+#buttonInterlocutor{
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    font-size: 100px;
+    animation: interloc 0.5s ease-out infinite;
+}
+@keyframes interloc{
+    0%{transform: translate(0%,0%);}
+    50%{transform: translate(30%,0%);}
+    100%{transform: translate(0%,0%);}
+}

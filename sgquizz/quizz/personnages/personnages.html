@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnages</title>
+    <link rel="shortcut icon" href="Img/thor.jpg">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+    <body>
+        <main id="mf">  
+            <button id="dcomm"><h1 id="pnom"></h1>
+                <h1>10 Questions</h1><br>
+                <p>Chaque bonne réponse apporte 1 point.<br>Ces points seront ajoutés et cumulés au tableau des joueurs</p>
+                <p>ATTENTION !<br>Dévoilement indice = -0.5</p>
+                <h3 id="tcom">A vous de jouer !</h3>
+            </button>                 
+            <h1 id="nquest"></h1>
+            <h3 id="quest"></h3>
+            <div id="brep"> 
+                <table>
+                    <tr>
+                        <th><input type="checkbox" class="prep" id="prep1" name="rep"></th><th id="idrep1" class="">&ensp;</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" class="prep" id="prep2" name="rep"></th><th id="idrep2" class="">&ensp;</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="checkbox" class="prep" id="prep3" name="rep"></th><th id="idrep3" class="">&ensp;</th>
+                    </tr>    
+                </table>                         
+            </div>  
+            <h4 id="rvf"></h4><br>        
+        </main><br>
+            <button id="bsuiv" onclick="quest2()">SUIVANT>>></button><br>
+            <a id="ret" href="../../index.html"><em>RETOUR A LA BASE</em></a><br>
+            <button id="btn" onclick="toggle()">INDICE</button><br> 
+            <div id="ind"> 
+            </div>    
+            <script src="personnages.js"></script>   
+    </body>
+</html>           

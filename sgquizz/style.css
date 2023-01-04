@@ -1,0 +1,791 @@
+/* -----POLICES------------------------------------------------------------------------------------------- */
+/* -----BACKGROUND---------------------------------------------------------------------------------------- */
+/* -----INDEX--------------------------------------------------------------------------------------------- */
+/* TITRE */
+/* SIGNATURE */
+/* ECRAN 1 */
+/* ECRAN 2 */
+/* BOUTONS "COMMENCER" */
+/* -----PAGE QUIZZ---------------------------------------------------------------------------------------- */
+/* FORMULAIRE; TITRE ET QUESTIONS */
+/* REPONSES */
+/* LIEN "SUIVANT" */
+/* INDICES */
+/* -----RESULTAT------------------------------------------------------------------------------------------ */
+/* TABLEAU RESULTAT */
+/* BOUTON "RETOUR" */
+
+/* -----POLICES------------------------------------------------------------------------------------------- */
+
+@font-face{font-family:"sg";src:url(fonts/STARGATE.TTF);}
+@font-face{font-family:"saira";src:url(fonts/Saira-VariableFont_wdth\,wght.ttf);}
+@font-face{font-family:"sairaso";src:url(fonts/SairaStencilOne-Regular.ttf);}
+@font-face{font-family:"sairai";src:url(fonts/Saira-Italic-VariableFont_wdth\,wght.ttf);}
+@font-face{font-family:"dotma";src:url(fonts/DOTMATRI.TTF);}
+@font-face{font-family:"dotmb";src:url(fonts/DOTMBold.TTF);}
+@font-face{font-family:"imp";src:url(fonts/impact.ttf);}
+
+/* -----BACKGROUND---------------------------------------------------------------------------------------- */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(img/body.jpg)no-repeat center/cover;
+    /* background: linear-gradient(
+        90deg,
+        black,
+        blue,
+        cyan,
+        white, 
+        white,
+        white,
+        cyan,
+        blue,
+        black); */
+    align-items: center;
+    text-align: center;
+    /* animation: lum 1s linear infinite; */
+}
+
+/* @keyframes lum{
+    0%{
+        background: linear-gradient(
+            0deg,
+            black,
+            blue,
+            cyan,
+            white, 
+            white,
+            white,
+            cyan,
+            blue,
+            black);
+    }
+    10%{
+        background: linear-gradient(
+            0deg,
+            black,
+            blue,
+            cyan,
+            white, 
+            white,
+            cyan,
+            blue,
+            black);
+    }
+    20%{
+        background: linear-gradient(
+            0deg,
+            black,
+            black,
+            blue,
+            cyan,
+            white, 
+            cyan,
+            blue,
+            black
+            black);
+    }
+    30%{
+        background: linear-gradient(
+            0deg,
+            black,
+            black,
+            black,
+            cyan,
+            white, 
+            cyan,
+            black,
+            black,
+            black);
+    }
+    40%{
+        background: linear-gradient(
+            0deg,
+            black,
+            black,
+            black,
+            black,
+            white, 
+            black,
+            black,
+            black,
+            black);
+    }
+    50%{
+        background: linear-gradient(
+            0deg,
+            black,
+            black,
+            black,
+            black,
+            black, 
+            black,
+            black,
+            black,
+            black);
+    }
+    60%{
+        background: linear-gradient(
+            90deg,
+            black,
+            black,
+            black,
+            black,
+            white, 
+            black,
+            black,
+            black,
+            black);
+    }
+    70%{
+        background: linear-gradient(
+            90deg,
+            black,
+            black,
+            black,
+            white,
+            white, 
+            white,
+            black,
+            black,
+            black);
+    }
+    80%{
+        background: linear-gradient(
+            90deg,
+            black,
+            black,
+            cyan,
+            white,
+            white, 
+            white
+            cyan,
+            black,
+            black);
+    }
+    90%{
+        background: linear-gradient(
+            90deg,
+            black,
+            blue,
+            cyan,
+            white,
+            white, 
+            white
+            cyan,
+            blue,
+            black);
+    }
+    100%{
+        background: linear-gradient(
+            90deg,
+            black,
+            blue,
+            cyan,
+            white,
+            white, 
+            white
+            cyan,
+            blue,
+            black);
+    }
+} */
+
+/* -----INDEX--------------------------------------------------------------------------------------------- */
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 50px 0;
+}
+
+header{
+    height: 350px;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    animation: back 100s linear infinite;
+}
+
+@keyframes back {
+    0% {background: url(img/background/back1.jpg) no-repeat fixed bottom/cover;}
+    10% {background: url(img/background/back2.jpg) no-repeat fixed center/cover;}
+    20% {background: url(img/background/back3.jpg) no-repeat fixed top/cover;}
+    30% {background: url(img/background/back4.jpg) no-repeat fixed top/cover;}
+    40% {background: url(img/background/back5.jpg) no-repeat fixed center/cover;}
+    50% {background: url(img/background/back6.jpg) no-repeat fixed top/cover;}
+    60% {background: url(img/background/back7.jpg) no-repeat fixed bottom/cover;}
+    70% {background: url(img/background/back8.jpg) no-repeat fixed top/cover;}
+    80% {background: url(img/background/back9.jpg) no-repeat fixed top/cover;}
+    90% {background: url(img/background/back10.jpg) no-repeat fixed top/cover;}
+    100% {background: url(img/background/back11.jpg) no-repeat fixed top/cover;}
+}
+
+/* TITRE */
+
+#titre{
+    margin: 30px auto;
+}
+
+#titre1{
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+    background: url(img/font.gif) center/cover;
+    -webkit-background-clip: text;
+    font-family: "sg";
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 30px;
+    text-shadow: 3px 3px 3px cyan;
+    text-decoration: underline;
+    text-underline-offset: 50px;
+}
+#titre2{
+    width: 800px;
+    margin: 0 auto;
+    background: url(img/font.gif) center/cover;
+    -webkit-background-clip: text;
+    font-family: "sg";
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 30px;
+    text-shadow: 3px 3px 3px cyan;   
+}
+
+@media(max-width: 900px){
+    #titre1, #titre2{
+        font-size: 40px;
+        height: 75px;
+        width: 450px;
+        border-width: 3px;
+    }
+}
+
+/* SIGNATURE */
+
+#sign{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+    margin: 0 auto;
+    background: url(img/psg.png) no-repeat center;
+    font-family: "saira";
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+    line-height: 0px; 
+}
+
+/* @media(max-width:800px){
+    #sign{
+        height: 75px;
+        width: 75px;
+        font-size: 15px;
+        margin: 0;
+    }
+} */
+
+#bys{color: red;}
+#bys:hover{animation: sla 0.2s linear infinite;}
+
+@keyframes sla{
+    0%{text-shadow:  5px 5px 3px rgb(100, 25, 25);}
+    50%{text-shadow:  5px 5px 3px rgb(200, 25, 25);}
+    100%{text-shadow:  5px 5px 3px rgb(250, 25, 25);}
+}
+
+#sevent{
+    position: absolute;
+    margin-left: 9px;
+    margin-bottom: 9px;
+    height: 130px;
+    width: 138px;
+    background: url(img/psg2.gif) center;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#secret{
+    position: relative;
+    top: 65px;
+    font-family: 'sairai';
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px greenyellow;
+    cursor:pointer;
+    animation: bcoms 0.5s linear infinite;
+}
+
+@keyframes bcoms{
+    0%{color: lime}
+    100%{color: green}}
+
+/* BOUTONS "COMMENCER" */
+
+
+/* @media(max-width:800px){
+    #bcom1,#bcom2{
+        margin: 0;
+    }
+} */
+
+.bcomm{
+    background-position: center;
+    font-family: "sairai";
+    height: 175px;
+    width: 175px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20px;
+    cursor:pointer;
+    border-style: ridge;
+    border-color: gold brown;
+    border-radius: 10px;
+    opacity: 50%;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.bcomm:hover{
+    height: 200px;
+    width: 200px;
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-size: 25px;
+    cursor:pointer;
+    border-style: ridge;
+    border-color: gold brown;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#bcomm1{background-image: url(img/bcomm/qu1.jpg);}
+#bcomm2{background-image: url(img/bcomm/qu2.jpeg);}
+#bcomm3{background-image: url(img/bcomm/qu3.jpg);}
+#bcomm4{background-image: url(img/bcomm/qu4.jpeg);}
+
+#bcommo{
+    background-image: url(img/bcomm/oneill.jpg);
+    border-color: blue;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#bcommj{
+    background-image: url(img/bcomm/jackson.jpg);
+    border-color: blue;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#bcommc{
+    background-image: url(img/bcomm/carter.jpg);
+    border-color: blue;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#bcommt{
+    background-image: url(img/bcomm/tealc.jpg);
+    border-color: blue;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* ECRAN 1 */
+
+#ecrans{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+}
+@media(max-width: 1100px){
+    #ecrans{
+        flex-direction: column;
+        height: 700px;
+    }
+}
+@media(max-width: 900px){
+    #ecrans{
+        flex-direction: column;
+        height: 700px;
+        margin-left: -360px;
+    }
+}
+
+
+#ecran1{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+    background-color: black;
+    border-style:solid;
+    border-width: 10px;
+    border-radius: 10%;
+    border-color: gray;
+    font-size: 10px;
+    font-family: "dotmb";
+    color: green;
+    overflow: hidden;                               
+}
+
+.code1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+    letter-spacing: 5px;
+    line-height: 1px;
+}
+.code1 p{
+    margin: 5px 0;
+}
+
+#tabj{
+    height: 130px;
+    width: 480px;
+    margin: 3% auto;
+    font-size: 1.30rem;
+    letter-spacing: 2px;
+    /* border-collapse: collapse; */
+}
+#ecran1 th{
+    border: 2px solid;
+}
+
+.joueur{cursor: pointer;}
+.joueur:hover{color: red;}
+
+.baff{
+    background-color: transparent;
+    border: none;
+    font-family: "dotmb";
+    font-size: 1.15rem;
+    color: green;
+    cursor: pointer;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.baff:hover{color: red;}
+
+.bec1{
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-family: "dotmb";
+    color: green;
+    line-height: 1px;
+    cursor: pointer;
+}
+
+.bec1:hover{color: red;}
+
+#ecreg{
+    position: absolute;
+    height: 320px;
+    width: 495px;
+    margin: 0px 3px;
+    background-color: black;
+    border-radius: 8%;
+    font-family: "sairas";
+    font-weight: bold;
+    font-size: 11.78px;
+    visibility: hidden;
+}
+
+#brreg{
+    border: none;
+    background-color: black;
+    font-family: "sairai";
+    font-size: 10px;
+    color: green;
+    cursor: pointer;
+}
+
+#brreg:hover{color: red;}
+
+.ecfon{
+    position: absolute;
+    top: 10px;
+    height: 900px;
+    width: 700px;
+    padding: 10px;
+    background-color: black;
+    border-style:solid;
+    border-width: 10px;
+    border-radius: 10%;
+    border-color: gray;
+    font-family: "imp";
+    font-size: 20px;
+    font-family: "sairas";
+    color: green;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#tbg{margin: 0 auto;}
+
+.bfon{
+    margin-top: 50px;
+    border: none;
+    background-color: black; 
+    font-family: "sairai";
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+.bfon:hover{color: red;}
+
+/* ECRAN 2 */
+
+#ecran2{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+    background-color: black;
+    border-style:solid;
+    border-width: 10px;
+    border-radius: 10%;
+    border-color: gray;
+    font-size: 10px;
+    font-family: "dotmb";
+    color: green; 
+    overflow: hidden;                                                               
+}
+
+.code2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 10px;
+    margin-top: 25px;
+    letter-spacing: 5px;
+    line-height: 1px;
+}
+.code2 p{
+    margin: 5px 0;
+}
+
+#logo{margin: 50px auto;}
+
+#jlauch{
+    position: absolute;
+    right: 44%;
+    bottom: 14.5%;
+    color: rgb(26, 26, 26); 
+    font-family:'imp';
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+
+#grd{
+    position: absolute;
+    right: 27%;
+    bottom: 41%;
+    color: rgb(26, 26, 26);
+    font-family:'sairas';
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+/* -----PAGE QUIZZ---------------------------------------------------------------------------------------- */
+
+/* FORMULAIRE; TITRE ET QUESTIONS */
+
+#dcomm{
+    position: absolute;
+    height: 550px;
+    width: 120%;
+    margin: 0 auto;
+    padding: 1%;
+    border-style: ridge;
+    border-color: gold brown;
+    border-width: 10px;
+    border-radius: 30px;
+    background: url(img/comm.jpg) no-repeat center/cover;
+    font-family: "sairai";
+    font-size: 100%;
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+    cursor: pointer;
+}
+
+#dcomm:hover {
+    transition: 0.5s;
+    color: red;                                   
+}
+
+#mf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+    border-style: ridge;
+    border-color: gold brown;
+    border-width: 10px;
+    border-radius: 30px;
+    font-family: "sairai";
+    font-size: 20px;
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+}
+
+/* REPONSES */
+
+.otrep{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.prep{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.rprep{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.grep{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#rvf{width: 210px;}
+
+/* BOUTON INDICE */
+
+#btn{
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(3, 155, 155);
+    border-style: groove;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: gold brown;
+    font-family:"sg";
+    text-shadow: 3px 3px 3px brown;
+    font-size: 30px;
+    color: goldenrod;
+}
+
+#btn:hover{
+    font-style: italic;
+    font-size: 35px;
+    color: red;
+    cursor: pointer;
+}
+
+#ind{margin: 10px auto;}
+
+/* LIEN "SUIVANT" */
+
+#bsuiv{ 
+    margin: 0px auto;
+    background: transparent;
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+    font-family: "sg";
+    font-size: 40px;   
+    border: none;
+    cursor: pointer;
+}
+
+#bsuiv:hover{ 
+    padding: 10px;
+    background-image:url(img/gif.gif);
+    background-position:0% 60%;
+    border-radius: 40px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: gold brown;
+    font-family: "sg";
+    font-size: 50px;
+    font-style: italic;   
+    color:red;
+    text-decoration: none;
+    animation: rlum 0.5s linear infinite alternate;
+}
+
+@keyframes rlum {
+    0% {color: red;}
+    100% {color: gold;}}
+
+/* -----RESULTAT------------------------------------------------------------------------------------------ */
+
+/* TABLEAU RESULTAT */
+
+#mres{
+    font-family: "sg";
+    color: gold;
+    height: 200px;
+    width: 30%;
+    border-style: ridge;
+    border-color: gold brown;
+    border-width: 5px;
+    border-radius: 5px;
+    border-radius: 30px;
+    margin: 50px ;
+}
+
+/* BOUTON "RETOUR" */
+
+#ret{
+    font-family: "sg";
+    font-size: 30px;   
+    text-decoration: none;
+    color: gold;
+    text-shadow: 3px 3px 3px brown;
+}
+
+#ret:hover{
+    padding: 15px 30px;
+    background-image:url(img/ret.gif);
+    background-position:50% 50%;
+    border-radius: 40px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: gold brown;
+    font-family: "sg";
+    font-size: 32px;
+    font-style: italic;   
+    text-decoration: none;
+    transition: 0.5s;
+    animation: rlum 0.5s linear infinite alternate;                                   
+}
+
+@keyframes rlum {
+    0% {color: red;}
+    100% {color: gold;}}
+
+

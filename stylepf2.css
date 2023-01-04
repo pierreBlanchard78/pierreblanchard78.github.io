@@ -1,0 +1,386 @@
+
+@font-face {font-family: 'kar'; src: url(fonts/Karstar\ Free.ttf);}
+@font-face {font-family: 'signpf2'; src: url(fonts/Signatie.otf);}
+@font-face {font-family: 'noto';src: url(fonts/NotoSansMono-VariableFont_wdth\,wght.ttf);}
+@font-face {font-family: 'love';src: url(fonts/Lovely.ttf);}
+@font-face {font-family: 'sign2';src: url(fonts/Amelanita\ Signature.ttf);}
+
+/* BACKGROUND */
+body{
+    background-color: rgb(86, 52, 148);
+}
+.lum{
+    position: absolute;
+    cursor: pointer;
+    transition: 1s;
+    z-index: -1;
+    animation: lum 10s linear infinite forwards;
+}
+@keyframes lum{
+    0%{scale: 1;opacity: 0%;}
+    10%{scale: 1.5;}
+    20%{scale: 1}
+    30%{scale: 1.5}
+    40%{scale: 1}
+    50%{scale: 1.5;opacity: 0%;}
+    60%{scale: 1;opacity: 100%}
+    70%{scale: 1.5}
+    80%{scale: 1;opacity: 100%}
+    90%{scale: 1.5;}
+    100%{scale: 1;opacity: 0%;}
+}
+/* POINTER */
+
+*{
+    cursor: none;
+}
+.pointer{
+    z-index: 10;
+}
+.squarex2,.squarey2{
+    position: absolute;
+    pointer-events: none;
+    background-color: red;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.squarex2{
+    top: 12px;
+    left: 32px;
+    height: 5px;
+    width: 35px;
+}
+.squarey2{
+    top: -1px;
+    left: 12.5px;
+    height: 35px;
+    width: 5px;
+}
+
+.pointer2clic1,.pointer2clic2{
+    visibility: visible;
+    transition: 0.5s;
+    background-color: green;
+    animation: rotationCursor2Pointerclic1 2s linear alternate forwards;
+}
+.pointer2clic2{
+    animation: rotationCursor2Pointerclic2 2s linear alternate forwards;
+}
+
+.circle2{
+    position: absolute;
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    color: red;
+    font-size: 50px;
+    line-height: 0.05;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.circleclic2{
+    height: 30px;
+    width: 30px;
+    color: transparent;
+    border: 5px solid green;
+    border-radius: 50%;
+}
+
+@keyframes rotationCursor2Pointerclic1{
+    0%{transform: rotate(0deg);left: 32px;}
+    20%{left: -5px;}
+    40%{transform: rotate(0deg);left: -5px;}
+    60%{transform: rotate(180deg);left: -5px;}
+    80%{transform: rotate(180deg);left: -5px;}
+    100%{transform: rotate(180deg);left: 32px;}
+}
+@keyframes rotationCursor2Pointerclic2{
+    0%{transform: rotate(0deg);top: -5px;}
+    20%{top: 32px;}
+    40%{transform: rotate(0deg);top: 32px;}
+    60%{transform: rotate(-180deg);top: 32px;}
+    80%{transform: rotate(-180deg);top: 32px;}
+    100%{transform: rotate(-180deg);top: -5px;}
+}
+/* NAVIGATION */
+#navigationPortfolio2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgb(38, 0, 109);
+}
+#signaturePortfolio2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 20px 50px;
+    background-color:wheat;
+    opacity: 80%;
+    border-style: double;
+    border-radius: 50%;
+    border-width: 4px;
+}
+#pb{
+    margin-left: 30px;
+    font-family: 'kar';
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+}
+#por{
+    margin-top: 5px;
+    border-style: solid;
+    border-radius: 10%;
+    border-width: 1px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: gold;
+}
+
+.BoxButtonsNavigationPortfolio2{
+    margin-top: 55px;
+    /* margin-right: 200px; */
+}
+
+#buttonNavigationPortfolio2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 700px;
+    margin: 30px 0px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    #buttonNavigationPortfolio2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.buttonNavigationPortfolio2{
+    margin: 0px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: darkslategray;
+}
+#buttonNavigationPortfolio2a{
+    color: blue;
+}
+#buttonNavigationPortfolio2b{
+    color: darkred;
+}
+#buttonNavigationPortfolio2c{
+    color: darkgreen;
+}
+.buttonNavigationPortfolio2:hover{
+    color: yellowgreen;
+}
+/* ---------------------------------------------------------------- */
+
+.diagramTech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 700px;
+    margin: 25px auto;
+    background-color:rgb(86, 52, 148);
+    border-radius: 25px;
+}
+table{
+    height: 50px;
+    width: 650px;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(86, 52, 148);
+    border-top: 1px solid red;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+td{
+    width: 100px;
+    vertical-align: top;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+.level{
+    border-top: 1px solid red;
+    color: red;
+}
+.info{
+    border-top: 1px solid red;
+}
+.html{
+    background-color: chocolate;
+}
+.css{
+    background-color: mediumblue;
+}
+.bootstrap{
+    background-color: royalblue;
+}
+.sass{
+    background-color: palevioletred;
+}
+.javascript{
+    background-color: gold;
+}
+.jquery{
+    background-color: darkblue;
+}
+.python{
+    background-color: yellow;
+}
+.angular{
+    background-color: crimson;
+}
+.github{
+    background-color: black;
+}
+
+/* ---------------------------------------------------------------- */
+
+#bloc{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: -1%;
+    left: 90%;
+    color: white;
+    font-size: 2px;
+    transition: 0.5s;
+    /* visibility: hidden; */
+}
+
+#face1,#face2,#face3{
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    border-style: 1px solid;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#face1{
+    top: 25%;
+    left: 25%;
+    background-color:blue; 
+}
+
+#face2{
+    top: 20%;
+    left: 20%;
+    background-color: darkred;
+}
+
+#face3{
+    top: 15%;
+    left: 15%;
+    background-color: darkgreen;   
+}
+#face3 a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* ---------------------------------------------------------- */
+
+/* PORTFOLIO 2 ARTICLES DISPLAY */
+.portfolio2ArticlesBox{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 300px;
+}
+
+.portfolio2Articles{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 50%;
+    top: 350px;
+    margin: 50px;
+    border: 5px double grey;
+    border-radius: 10px;
+    color: white;
+}
+
+#portfolio2Articles1,#portfolio2Articles3,#portfolio2Articles5{
+    justify-content:left;
+}
+#Portfolio2Articles2,#Portfolio2Articles4{
+    justify-content:right;
+}
+/* PORTFOLIO ARTICLES IMAGE */
+#portfolio2ArticlesImage1,#portfolio2ArticlesImage2,#portfolio2ArticlesImage3,#portfolio2ArticlesImage4,#portfolio2ArticlesImage5,#portfolio2ArticlesImage6{
+    height: 90%;
+    width: 50%;
+    margin: 20px;
+    border: 5px double grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px white;
+}
+#portfolio2ArticlesImage1{
+    background: url(img/sgquizz.jpg)center/cover;
+}
+#portfolio2ArticlesImage2{
+    background: url(img/batnav.jpg)top/cover;
+}
+#portfolio2ArticlesImage3{
+    background: url(img/mach.jpg)top/cover;
+}
+#portfolio2ArticlesImage4{
+    background: url(img/animes.jpg)center/cover;
+}
+#portfolio2ArticlesImage5{
+    background: url(img/bricoles.jpg)top/cover;
+}
+#portfolio2ArticlesImage6{
+    background: url(img/gobelinthief.jpg)top/cover;
+}
+
+/* PORTFOLIO ARTICLES TEXT */
+#portfolio2ArticlesText1,#portfolio2ArticlesText2,#portfolio2ArticlesText3,#portfolio2ArticlesText4,#portfolio2ArticlesText5,#portfolio2ArticlesText6{
+    height: 70%;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: darkcyan;
+    border: 5px double grey;
+    border-radius: 10px;
+    font-family: 'lora';
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
