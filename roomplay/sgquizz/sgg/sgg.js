@@ -1,13 +1,13 @@
 //-----SGG-----------------------------------------------------------------------------------------------//
 
-const body = document.getElementById('body')
-const mg = document.getElementById('maingame')
-const aim = document.getElementById('aim')
-const aff1 = document.getElementById('aff1')
-const aff2 = document.getElementById('aff2')
-const btc = document.getElementById('btc')
-const comm = document.getElementById('comm')
-const bmg = document.getElementById('bmg')
+const body = document.querySelector('.body')
+const mg = document.querySelector('.maingame')
+const aim = document.querySelector('.aim')
+const score = document.querySelector('.score')
+const message = document.querySelector('.message')
+const buttonStart = document.querySelector('.buttonStart')
+// const comm = document.querySelector('.comm')
+const bmg = document.querySelector('.bmg')
 const atk1 = src='img/atk1.png'
 const atk2 = src='img/atk2.png'
 const atk3 = src='img/atk3.png'
@@ -25,8 +25,8 @@ body.addEventListener('mousemove', (e) => {
     aim.style.top = e.y / window.innerHeight * 100 - 5.9 + '%'
 })
 //EVENEMENT LANCEMENT JEU
-btc.addEventListener('click', () => {
-    btc.style.visibility = 'hidden'
+buttonStart.addEventListener('click', () => {
+    buttonStart.style.visibility = 'hidden'
     //FONCTION AT'AK
     let atkf = setInterval(atkfall, 1000)
     function atkfall(){ 
@@ -43,16 +43,17 @@ btc.addEventListener('click', () => {
         //EVENEMENT CLIC AT'AK
         cible1.addEventListener('click', () => {
             cible1.style.animationPlayState = 'paused'
+            console.log(cible1.style.x)
             cible1.src = exp
-            cible1.style.marginTop = '-300px'
+            cible1.style.marginTop = '-400px'
             setTimeout(() => {cible1.remove()},1000)
             ptsg = ptsg + 10
-            aff1.textContent = ptsg
+            score.textContent = ptsg
             //CONDITION SELON SCORE
-            if(ptsg == 50){aff2.textContent = "Tu a l'air motivé...";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 70){aff2.textContent = "T'en a pas marre ?";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 100){aff2.textContent = "Sérieux, arrête, ce jeu est merdique...";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 120){aff2.textContent = "Tu a vraiment que ca a foutre ?";setTimeout(() => {aff2.textContent = ""},5000)}
+            if(ptsg == 50){message.textContent = "Tu a l'air motivé...";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 70){message.textContent = "T'en a pas marre ?";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 100){message.textContent = "Sérieux, arrête, ce jeu est merdique...";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 120){message.textContent = "Tu a vraiment que ca a foutre ?";setTimeout(() => {message.textContent = ""},5000)}
             if(ptsg == 150 || ptsg == 155 || ptsg == 160){
                 cible1.addEventListener('click', boss())
                 mg.style.pointerEvents = 'none'
@@ -82,12 +83,12 @@ btc.addEventListener('click', () => {
             cible2.style.marginTop = '-100px'
             setTimeout(() => {cible2.remove()},1000)
             ptsg += 5
-            aff1.textContent = ptsg
+            score.textContent = ptsg
             //CONDITION SELON SCORE
-            if(ptsg == 50){aff2.textContent = "Tu a l'air motivé...";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 70){aff2.textContent = "T'en a pas marre ?";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 100){aff2.textContent = "Sérieux, arrête, ce jeu est merdique...";setTimeout(() => {aff2.textContent = ""},5000)}
-            if(ptsg == 120){aff2.textContent = "Tu a vraiment que ca a foutre ?";setTimeout(() => {aff2.textContent = ""},5000)}
+            if(ptsg == 50){message.textContent = "Tu a l'air motivé...";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 70){message.textContent = "T'en a pas marre ?";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 100){message.textContent = "Sérieux, arrête, ce jeu est merdique...";setTimeout(() => {message.textContent = ""},5000)}
+            if(ptsg == 120){message.textContent = "Tu a vraiment que ca a foutre ?";setTimeout(() => {message.textContent = ""},5000)}
             if(ptsg == 150 || ptsg == 155 || ptsg == 160){
                 cible2.addEventListener('click', boss())
                 mg.style.pointerEvents = 'none'
@@ -107,6 +108,7 @@ btc.addEventListener('click', () => {
             cible3.src = mere
             cible3.classList.add('cible3')
             cible3.style.top = '-200px'
+            cible3.style.left = '700px'
             cible3.style.transition = '3s'
             setTimeout(() => {cible3.style.top = '200px'})
             mg.appendChild(cible3)
@@ -118,7 +120,7 @@ btc.addEventListener('click', () => {
                 touch.src = exp
                 touch.style.position = 'absolute'
                 touch.style.top = '200px'
-                touch.style.left = '650px'
+                touch.style.left = '800px'
                 setTimeout(() => {
                     mg.removeChild(touch)
                     cible3.style.animationPlayState = 'running'
@@ -171,14 +173,14 @@ btc.addEventListener('click', () => {
                     }
                     if(ptsg >= 200){
                         setTimeout(() => {
-                            aff2.innerHTML = 'Félicitation ! <br /> Profils SG Enregistrés : <br /> "O\'NEILL" <br /> "CARTER" <br /> "JACKSON" <br /> "TEAL\'C"'
+                            message.innerHTML = 'Félicitation ! <br /> Profils SG Enregistrés : <br /> "O\'NEILL" <br /> "CARTER" <br /> "JACKSON" <br /> "TEAL\'C"'
                         }, 6000)
                     }
                     //FIN FONCTION EXPLOSION
                 }
                 //FIN ANIMATION EXPLOSION
             ptsg += 10
-            aff1.textContent = ptsg
+            score.textContent = ptsg
             })
             //FIN EVENT BOSS
         }, 4000)

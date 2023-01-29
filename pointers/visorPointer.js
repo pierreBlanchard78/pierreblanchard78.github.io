@@ -1,4 +1,4 @@
-//-----CURSOR------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//-----VISOR POINTER------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 // CANCEL DEFAULT CURSOR IN DOM
 let elements = document.getElementsByTagName('*')
@@ -21,23 +21,22 @@ pointer.style.display = 'flex'
 pointer.style.justifyContent = 'center'
 pointer.style.alignItems = 'center'
 pointer.style.pointerEvents = 'none'
-// SQUARE X STYLE ATTRIBUTS
+pointer.style.zIndex = '10'
+// SQUARE X STYLE ATTRIBUTES
 squarex.style.position = 'absolute'
 squarex.style.height = '30px'
 squarex.style.width = '30px'
 squarex.style.border = '1px solid darkcyan'
 squarex.style.borderRadius = '10%'
 squarex.style.pointerEvents = 'none'
-squarex.style.zIndex = '10'
-// SQUARE Y STYLE ATTRIBUTS
+// SQUARE Y STYLE ATTRIBUTES
 squarey.style.position = 'absolute'
 squarey.style.height = '30px'
 squarey.style.width = '30px'
 squarey.style.border = '1px solid darkcyan'
 squarey.style.borderRadius = '10%'
 squarey.style.pointerEvents = 'none'
-squarey.style.zIndex = '10'
-// CIRCLE STYLE ATTRIBUTS
+// CIRCLE STYLE ATTRIBUTES
 circle.style.position = 'absolute'
 circle.style.height = '15px'
 circle.style.width = '15px'
@@ -113,7 +112,6 @@ function click(){
             border: '2px dotted red'
         },
         {
-            // transform: 'rotate(360deg)',
             border: '1px solid red'
         }
         ], {

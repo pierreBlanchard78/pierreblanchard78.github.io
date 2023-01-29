@@ -222,7 +222,7 @@ main{
     width: 250px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: pink;
+    background-color: peachpuff;
     border: 3px solid white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 0.5em;
@@ -262,11 +262,12 @@ main{
 #pagePresentation,#pageCv,#pageContactInformation,#pageProjects{
     position: absolute;
     height: 1700px;
-    top: -1800px;
+    top: -2000px;
     width: 100%;
     margin-top: 20px;
     background: beige;
     text-align: center;
+    transition: 0.5s;
 }
 
 /* -----PORTFOLIO----------------------------------------------------------------------------------------- */
@@ -336,10 +337,12 @@ td{
 .angular{
     background-color: crimson;
 }
+.react{
+    background-color:deepskyblue;
+}
 .github{
     background-color: black;
 }
-
 
 #pagePortfolio{
     position: relative;
@@ -384,22 +387,22 @@ td{
 } */
 
 #portfolioArticles1{
-    background: url(img/sgquizz.jpg) top/cover;
+    background: url(img/logo.jpg) top/cover;
 }
 #portfolioArticles2{
-    background: url(img/batnav.jpg) center/cover;
-}
-#portfolioArticles3{
-    background: url(img/mach.jpg) center/cover;
-}
-#portfolioArticles4{
     background: url(img/animes.jpg) center/cover;
 }
-#portfolioArticles5{
+#portfolioArticles3{
     background: url(img/bricoles.jpg) center/cover;
 }
+#portfolioArticles4{
+    background: url(img/logo.jpg) center/cover;
+}
+#portfolioArticles5{
+    background: url(img/logo.jpg) center/cover;
+}
 #portfolioArticles6{
-    background: url(img/gobelinthief.jpg) center/cover;
+    background: url(img/logo.jpg) center/cover;
 }
 
 .portfolioArticlesTitle{
@@ -440,7 +443,7 @@ td{
     font-family: 'spa';/* <<<FONT */
 }
 
-.experiencesPage,.formationPage{
+.experiencesPage{
     height: 50px;
     width: 90%;
     margin: 0px auto;
@@ -451,7 +454,7 @@ td{
     overflow: hidden;
 }
 
-.experiencesPageTitle,.formationPageTitle{
+.experiencesPageTitle{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,7 +471,7 @@ td{
     transition: 0.5s;
     overflow: hidden;
 }
-.experiencesPageTitle:hover,.formationPageTitle:hover{
+.experiencesPageTitle:hover{
     color: darkred;
 }
 
@@ -503,7 +506,7 @@ td{
     height: 40%;
     width: 50%;
     margin: 50px auto;
-    background-color: lightsteelblue;
+    background-color:peachpuff;
     border: 5px double black;
     border-radius: 20px;
     line-height: 0.6;

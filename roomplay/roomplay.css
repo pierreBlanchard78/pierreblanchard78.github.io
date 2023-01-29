@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "kar";
+  src: url(fonts/Karstar\ Free.ttf);
+}
+@font-face {
+  font-family: "signUp";
+  src: url(fonts/Signup.ttf);
+}
+/* BACKGROUND */
+.body {
+  background-color: rgb(86, 52, 148);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+.headerRoomplay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(38, 0, 109);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: 2%;
+  background-color: wheat;
+  opacity: 80%;
+  border-style: double;
+  border-radius: 50%;
+  border-width: 4px;
+}
+
+.author {
+  margin-left: 25px;
+  margin-top: 10px;
+  font-family: "kar";
+  font-size: 2.5em;
+  line-height: 0.5;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: darkcyan;
+}
+
+.banner {
+  margin-top: 20px;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 10%;
+  border-width: 1px;
+  font-family: "signUp";
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: gold;
+}
+
+.buttonNavigationroomplay {
+  margin: 0px 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid transparent;
+  color: darkslategray;
+}
+
+.buttonNavigationroomplay:hover {
+  color: yellowgreen;
+}
+
+.buttonNavClicked {
+  -webkit-animation: click 0.5s linear infinite;
+          animation: click 0.5s linear infinite;
+}
+
+@-webkit-keyframes click {
+  0% {
+    border: 2px solid yellowgreen;
+  }
+  20% {
+    border: 2px solid transparent;
+  }
+  50% {
+    border: 2px solid yellowgreen;
+  }
+  70% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid yellowgreen;
+  }
+}
+
+@keyframes click {
+  0% {
+    border: 2px solid yellowgreen;
+  }
+  20% {
+    border: 2px solid transparent;
+  }
+  50% {
+    border: 2px solid yellowgreen;
+  }
+  70% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid yellowgreen;
+  }
+}
+.boxText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 25px auto;
+  padding: 10px;
+  background-color: rgb(86, 52, 148);
+  border-radius: 25px;
+  text-align: center;
+  color: rgb(38, 0, 109);
+  font-family: system-ui;
+}
+
+.boxText p {
+  width: 500px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.boxPhotos, .boxMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxTechs {
+  display: flex;
+  align-items: center;
+}
+
+.imgTechs {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+
+.roomplayArticlesBox {
+  height: 100%;
+  width: 100%;
+  margin-top: 300px;
+}
+
+.roomplayArticles {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 50%;
+  top: 350px;
+  margin: 50px;
+  border: 5px double grey;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.roomplayArticlesImage {
+  height: 80%;
+  width: 50%;
+  margin: 20px;
+  border: 5px double grey;
+  border-radius: 10px;
+  transition: 1s;
+}/*# sourceMappingURL=roomplay.css.map */

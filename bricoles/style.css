@@ -30,11 +30,12 @@
     background-color: darkgrey;
 }
 
-.moveEvent{
+.moveBox{
     position: relative;
     height: 100px;
     width: 100px;
     cursor: pointer;
+    background-color: blue;
     z-index: 3;
 }
 
@@ -53,6 +54,17 @@
     z-index: 1;
 }
 
+.buttonsRandmove{
+    position: absolute;
+    top: 165%;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+.buttonIntervalDirection,.buttonIntervalIncrement{
+    height: 50px;
+    width: 100px;
+}
 
 /* -----CONSOLE---------------------------------------------------------------------------------------------------------------------- */
 

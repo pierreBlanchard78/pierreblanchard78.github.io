@@ -29,7 +29,6 @@ cadran.style.width = '100px'
 cadran.style.margin = '10px auto'
 cadran.style.border = '3px solid black'
 cadran.style.backgroundColor = 'rgb(32, 32, 32)'
-// cadran.style.color = 'white'
 // HOURS
 displayHours.style.textAlign = 'center'
 displayHours.style.height = '25px'

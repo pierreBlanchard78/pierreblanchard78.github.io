@@ -73,7 +73,7 @@ function startIa(gameIa){// DISPLAY BOATS IA
 
 for (boxClick=0;boxClick<game.length;boxClick++){// BROWSE GRID
     game[boxClick].addEventListener('click',(event)=>{
-        let boxPlay = event.path[0] 
+        let boxPlay = event.target
         exit.unshift(boxPlay)
         const marq = document.createElement('div')
         marq.style.height = '10px'

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--NAVIGATION-->
+<!--SIDEBAR LEFT-->
+<!--PORTFOLIO-->
+<!--PRESENTATION-->
+<!--CV-->
+<!--CONTACT INFORMATION-->
+<!--PROJECTS-->
+<!--SIDEBAR RIGHT-->
+<!--PORTFOLIO 2-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio2</title>
+    <link rel="shortcut icon" href="Img/onglet.jpg">
+    <link rel="stylesheet" href="roomplay.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <!-- <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    /> -->
+</head>
+    <body class="body">
+<!--PORTFOLIO 2-->
+        <header class="headerRoomplay">
+            <!-- <nav class="navbar"> -->
+                <div class="logo">
+                    <span class="author">BLANCHARD</span><br><span class="author">PIERRE</span><span class="banner">ROOMPLAY</span>    
+                </div>
+
+                <div class="boxText">
+                    <h1>BIENVENUE !</h1>
+                    <div class="boxPhoto">
+                        <p class="boxMessage"></p>
+                    </div>
+                    <div className='boxTechs'>
+                        <img class="imgTechs" src="img/techs/html5.png" alt="Logo HTML5"/>
+                        <img class="imgTechs" src="img/techs/css3.png" alt="Logo CSS3"/>
+                        <img class="imgTechs" src="img/techs/js.png" alt="Logo JAVASCRIPT"/>
+                        <img class="imgTechs" src="img/techs/sass.png" alt="Logo SASS"/>
+                    </div>
+                </div>
+
+                <div class="BoxButtonsNavigationroomplay">
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplaya">Qui suis-je ?</button>
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplayb">Projets</button>
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplayc">Liens utiles</button>
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplaye" onclick="window.location.href = 'ctc.html'">Me contacter (Hors service)</button>
+                </div>
+            <!-- </nav> -->
+
+        </header><!-- END header -->
+
+        <div class="roomplayArticlesBox">
+            <div class="roomplayArticles" id="roomplayArticles1" onclick="window.location.href = 'sgquizz/index.html'">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage1" src="img/articles/sgquizz.jpg" alt="sgquizz.jpg">
+                <div >
+                    <h1>SG-Quizz</h1>
+                    <p>
+                        Le Sg-Quizz est ma première idée de concept suffisament simple pour m'aider a me lancer dans le developpement.
+                    </p>
+                    <p>
+                        Il contient pas loin de cent questions sur le thème de la série TV de science-fiction Stargate SG-1, 
+                        avec la possibilité d'enregistrement de 3 profils de joueurs avec noms, grades et score evolutifs, et est régit dynamiquement par javascript.
+                    </p>
+                </div>
+            </div>
+
+            <div class="roomplayArticles" id="roomplayArticles2" onclick="window.location.href = 'batnav/index.html'">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage2" src="img/articles/batnav.jpg" alt="batnav.jpg">
+                <div id="roomplayArticlesText2">
+                    <h1>Bataille Navale</h1>
+                    <p>
+                        Une bataille navale en javascript.
+                    </p>
+                    <p>
+                        Il reste encore a developper la réponse automatique (IA) qui se contente de frapper au hasard sans aucune stratégie...
+                    </p>
+                    <p>
+                        Des connaissances restent a acquérir.
+                    </p>
+                </div>
+            </div>
+
+            <div class="roomplayArticles" id="roomplayArticles3" onclick="window.location.href = 'machine/index.html'">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage3" src="img/articles/mach.jpg" alt="mach.jpg">
+                <div id="roomplayArticlesText3">
+                    <h1>Machine a sous</h1>
+                    <p>
+                        Un petit programme simulant une machine a sous en javascript.
+                        Reste encore a améliorer les taux de gains beaucoup trop elevés.
+                    </p>
+                </div>
+            </div>
+
+            <div class="roomplayArticles" id="roomplayArticles4" onclick="window.location.href = 'gobelinthief/index.html'">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage4" src="img/articles/gobelinthief.jpg" alt="gobelinthief.jpg">
+                <div id="roomplayArticlesText4">
+                    <h1>Gobelin Thief</h1>
+                    <p>
+                        Un petit jeu de role fantasy. En production.
+                    </p>
+                </div>
+            </div>
+
+            <div class="roomplayArticles" id="roomplayArticles5" onclick="window.location.href = ''">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage5" src="" alt="">
+                <div id="roomplayArticlesText5">
+                    <h1>Snake</h1>
+                    <p>
+                        Le célèbre jeu mobile. En production.
+                    </p>
+                </div>
+            </div>
+
+        </div><!-- END "portfolio2ArticlesBox" -->
+
+        <script src="roomplay.js"></script>
+        <script src="lum.js"></script>
+        <script src="pointers/keyPointer.js"></script>
+    </body>
+</html>

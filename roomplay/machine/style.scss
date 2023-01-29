@@ -1,3 +1,13 @@
+$border-md: 5px solid rgb(24, 24, 24);
+$border-lg: 10px solid rgb(24, 24, 24);
+$border-sm: 2px solid rgb(24, 24, 24);
+
+%flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
 /* -----SLOT MACHINE---------------------------------------------------------------------------------------------------------------------- */
 /* BOX MACHINE */
 /* JACKPOT */
@@ -20,31 +30,31 @@ body{
 }
 /* BOX MACHINE */
 #boxMachine{
-    display: flex;
+    @extend %flex-centered;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 800px;
     width: 500px;
-    margin: 10% auto;
-    border:  10px solid rgb(24, 24, 24);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    margin: 20% auto;
+    border: $border-lg;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background: brown;
     color: white;
-    overflow: hidden;
+    animation: bord 1s linear infinite;
 }
+@keyframes bord{
+    50%{border-color: yellow;}
+}
+
 /* JACKPOT */
 #jackpot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     height: 60px;
     width: 200px;
     margin: -50px auto;
-    border: 5px solid rgb(24, 24, 24);
+    border: $border-md;
     border-radius: 10px;
     background-color: gold;
     font-size: 45px ;
@@ -61,8 +71,8 @@ body{
 }
 /* SIGNATURE */
 #signature{
-    margin-left: 400px;
-    margin-bottom: 20px;
+    margin-left: 350px;
+    margin-bottom: 10px;
     font-family: 'sign3';
     font-size: 20px;
     line-height: 1px;
@@ -76,24 +86,19 @@ body{
 #panel{
     height: 170px;
     margin: 20px auto;
-    border: 5px solid rgb(24, 24, 24);
+    border: $border-md;
     border-radius: 10px;
     background-color: gold;
 }
 /* DIAL ROLLS */
 #displayRolls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     height: 130px;
     background: rgb(32, 32, 32);
 }
 
 #displayRolls th{
-    background-color: black;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(24, 24, 24);
+    border: $border-lg;
     background-color: blue;
 }
 
@@ -107,46 +112,31 @@ body{
 }
 /* TOKEN INFO PANEL */
 #displayTokenInfos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     margin: 20px auto;
 }
 #displayTokenInfos th{
     height: 30px;
     width: 100px;
     background-color: gold;
-    border: 5px solid rgb(24, 24, 24);
+    border: $border-md;
     border-radius: 10px;
     font-size: 30px;
 }
 /* FLASHING TOKENS INFOS */
-.lumgains{animation: tg 0.2s linear infinite}
-@keyframes tg{
+.lumgains{animation: lum 0.2s linear infinite}
+@keyframes lum{
     0%{color: red}
     100%{color: white}
 }
 
-.lummise{animation: tm 0.2s linear infinite}
-@keyframes tm{
-    0%{color: red}
-    100%{color: white}
-}
-
-.lumjetons{animation: tj 0.2s linear infinite}
-@keyframes tj{
-    0%{color: red}
-    100%{color: white}
-}
 /* BUTTONS MACHINE PANEL */
 #boxButtonsMachine{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flex-centered;
     height: 40px;
     margin: 10px;
     padding: 10px;
-    border: 5px solid rgb(24, 24, 24);
+    border: $border-md;
     border-radius: 10px;
     background-color: gold;
 }
@@ -155,7 +145,7 @@ body{
     height: 50px;
     margin: 0 5px;
     background-color: orangered;
-    border-width: 0.1px black;
+    border: $border-sm;
     border-radius: 5px;
     font-size: 1rem;
     color: aliceblue;
