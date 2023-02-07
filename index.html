@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentification</title>
 </head>
-<body>
+<body style="background-color:darkslateblue">
 
         <form class="input" action="portfolio.html">
             <span class="message">
@@ -14,7 +14,7 @@
                 <noscript>
                     <p style="color:red;font-weight: bold;">
                         ///JAVASCRIPT DESACTIVE\\\ javascript indispensable ! Veuillez activer javascript.
-                        <a href="https://support.google.com/adsense/answer/12654?hl=fr">>Aide</a>
+                        <a target="_blank" href="https://support.google.com/adsense/answer/12654?hl=fr">>Aide</a>
                     </p>
                 </noscript>
             </span>
@@ -36,10 +36,13 @@
         height: 350px;
         width: 350px;
         margin: 200px auto;
-        background-color:lightseagreen;
+        padding: 5px;
+        background-color:cadetblue;
+        /* background-color:lightseagreen; */
         border: 3px solid black;
         border-radius: 10%;
-        box-shadow: 10px 10px 0px darkslategrey;
+        box-shadow: 10px 10px 0px;
+        /* box-shadow: 10px 10px 0px darkslategray; */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2em;
         font-weight: bold;
@@ -88,8 +91,9 @@
         const enter = document.querySelector('.buttonEnter')
         const message = document.querySelector('.message')
         const listeId = [
-            ['slayer','26048920p'],
             ['mikyta','0678598239'],
+            ['slayer','26048920p'],
+            
         ]
 
         pseudo.addEventListener('input',(e)=>{
@@ -107,12 +111,11 @@
                     message.style.color = 'red'
                     message.textContent = 'Le pseudo doit contenir 3 caractères minimum, 15 maximum'
                 }else{e.target.blur();pass.focus()}
-
             }
         })
 
         pass.addEventListener('input',(e)=>{
-            if(e.target.value.length>9||e.target.value.length<3){
+            if(e.target.value.length>10||e.target.value.length<3){
                 message.style.color = 'red'
                 message.textContent = 'Le mot de passe doit contenir 3 caractères minimum, 10 maximum'
             }else{message.textContent = ''
@@ -133,14 +136,19 @@
 
         enter.addEventListener('click',(event)=>{
             for(elem of listeId){
+                console.log(elem)
                 if(pseudo.value===elem[0]&&pass.value===elem[1]){
                     console.log(pseudo.value===elem[0]&&pass.value===elem[1])
+                    
                     message.style.color = 'green'
                     message.textContent = `Identifiants valides. Vous allez etre dirigé sur la page d'acceuil`
                     localStorage.setItem('userName', pseudo.value)
                     console.log(localStorage)
                     break
-                }else{
+                }
+                
+                else{
+                    console.log('non')
                 event.preventDefault()
                 message.style.color = 'red'
                 message.textContent = `Identifiants incorrectes, Veuillez rééssayer.`

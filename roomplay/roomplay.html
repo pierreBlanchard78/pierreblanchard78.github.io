@@ -13,45 +13,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio2</title>
+    <title>RoomPlay</title>
     <link rel="shortcut icon" href="Img/onglet.jpg">
     <link rel="stylesheet" href="roomplay.css">
     <!-- <link rel="stylesheet" href="responsive.css"> -->
-    <!-- <link
+    <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"
-    /> -->
+    />
 </head>
     <body class="body">
 <!--PORTFOLIO 2-->
-        <header class="headerRoomplay">
-            <!-- <nav class="navbar"> -->
-                <div class="logo">
+        <header class="headerRoomplay 
+            container-fluid
+            d-flex
+            flex-column
+            flex-sm-row
+            ">
+                <!-- <div class="logo row">
                     <span class="author">BLANCHARD</span><br><span class="author">PIERRE</span><span class="banner">ROOMPLAY</span>    
-                </div>
+                </div> -->
 
-                <div class="boxText">
-                    <h1>BIENVENUE !</h1>
-                    <div class="boxPhoto">
-                        <p class="boxMessage"></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-airplane-engines-fill m-3" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z"/>
+                </svg>
+
+                <div class="
+                    boxText 
+                    row-col-3 
+                    d-flex 
+                    flex-column
+                    flex-xl-row
+                    justify-content-center align-items-center
+                    justify-content-xl-space-around 
+                    m-3
+                    p-1
+                ">
+
+                    <h1 class="m-3 text-center">BIENVENUE !</h1>
+
+                    <div class="
+                        row
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                    ">
+                        <div class="
+                            boxPhoto
+                            d-flex
+                            flex-column
+                            align-items-center
+                        ">
+                        <p class="
+                            boxMessage
+                            d-flex
+                            flex-column
+                            align-items-center
+                            text-center
+                        "></p>
+                        </div>
                     </div>
-                    <div className='boxTechs'>
+
+                    <div class='boxTechs row-col d-flex flex-lg-row flex-xl-column flex-xxl-row'>
                         <img class="imgTechs" src="img/techs/html5.png" alt="Logo HTML5"/>
                         <img class="imgTechs" src="img/techs/css3.png" alt="Logo CSS3"/>
                         <img class="imgTechs" src="img/techs/js.png" alt="Logo JAVASCRIPT"/>
                         <img class="imgTechs" src="img/techs/sass.png" alt="Logo SASS"/>
+                        <img class="imgTechs" src="img/techs/bootstrap.png" alt="Logo SASS"/>
                     </div>
                 </div>
 
-                <div class="BoxButtonsNavigationroomplay">
+                <div class="
+                    BoxButtonsNavigationroomplay
+                    row-col
+                    d-flex
+                    flex-row
+                ">
                     <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplaya">Qui suis-je ?</button>
                     <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplayb">Projets</button>
                     <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplayc">Liens utiles</button>
-                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplaye" onclick="window.location.href = 'ctc.html'">Me contacter (Hors service)</button>
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplayd">VS</button>
+                    <button type="button" class="buttonNavigationroomplay" id="buttonNavigationroomplaye" onclick="window.location.href = 'ctc.html'">Me contacter</button>
                 </div>
-            <!-- </nav> -->
 
         </header><!-- END header -->
 
@@ -107,8 +153,8 @@
                 </div>
             </div>
 
-            <div class="roomplayArticles" id="roomplayArticles5" onclick="window.location.href = ''">
-                    <img class="roomplayArticlesImage" id="roomplayArticlesImage5" src="" alt="">
+            <div class="roomplayArticles" id="roomplayArticles5" onclick="window.location.href = 'snake/index.html'">
+                    <img class="roomplayArticlesImage" id="roomplayArticlesImage5" src="" alt="snake/index.html">
                 <div id="roomplayArticlesText5">
                     <h1>Snake</h1>
                     <p>
@@ -121,6 +167,7 @@
 
         <script src="roomplay.js"></script>
         <script src="lum.js"></script>
-        <script src="pointers/keyPointer.js"></script>
+        <script src="vs.js"></script>
+        <!-- <script src="pointers/keyPointer.js"></script> -->
     </body>
 </html>

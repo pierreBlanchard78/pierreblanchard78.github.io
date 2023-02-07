@@ -5,7 +5,7 @@ const moveInterval = 100
 
 let it = 1125
 let eat = 0
-// let snake = [it]
+let snake = [it]
 let prey = Math.floor(Math.random() * 2500)
 
 cellsCreate()
@@ -169,9 +169,14 @@ function keyDown(e) {
 // EXCEPT BOX PLAY FOR REFRESH
     function exitCases() {
         array.map((cases) => cases.style.backgroundColor = 'white')
-        array.filter((notit) => notit != it && notit != prey)
+        // array.filter((notit) => notit != it && notit != prey && notit != snake)
         array[prey].style.backgroundColor = 'red'
         array[it].style.backgroundColor = 'black'
+        // array[snake].style.backgroundColor = 'black'
+        // for(elem of snake){
+        //     console.log(elem)
+        //     array[elem].style.backgroundColor = 'black'
+        // }
     }
 // HIT FUNCTION 
     function eatPrey() {

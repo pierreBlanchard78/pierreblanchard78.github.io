@@ -43,7 +43,11 @@ let spanUser = document.createElement('span')
 spanUser.textContent = userName
 spanUser.classList.add('spanUser')
 welcomeMessage.textContent = 'Bienvenue '
-welcomeMessage.append(spanUser)
+if(userName = localStorage.getItem('userName', 'pseudo.value')){
+    welcomeMessage.append(spanUser)
+}else{welcomeMessage.append('?????')}
+localStorage.clear
+
 
 //-----COMMENTS------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -171,7 +175,6 @@ if(sidebarMessageString2[0][iCode]===undefined){
 
 for(element of portfolioArticles){
     element.addEventListener('click',(e)=>{
-        console.log(e.target)
         if(e.target.style.height==='600px'){
             
             e.target.style.height = '80px'

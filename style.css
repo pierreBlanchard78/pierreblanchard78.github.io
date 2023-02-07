@@ -19,9 +19,9 @@ body,main{
 
 body{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 1700px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: 20px;
     background-color:beige;
 }
@@ -143,7 +143,7 @@ main{
 /* -----BOUTONS RETOUR LIENS------------------------------------------------------------------------------ */
 
 .buttonBackNavigation{
-    margin: 50px 0;
+    margin: 10px 0;
     padding: 10px;
     background-color: beige;
     font-family: 'spa';/* <<<FONT */
@@ -222,7 +222,7 @@ main{
     width: 250px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: peachpuff;
+    background-color: antiquewhite;
     border: 3px solid white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 0.5em;
@@ -281,7 +281,7 @@ main{
     margin: 0 auto;
     margin-top: 50px;
     padding-top: 25px;
-    background-color:beige;
+    background-color:antiquewhite;
     border: 2px double black;
     border-radius: 25px;
 }
@@ -387,7 +387,7 @@ td{
 } */
 
 #portfolioArticles1{
-    background: url(img/logo.jpg) top/cover;
+    background: url(img/roomplay.jpg) center/cover;
 }
 #portfolioArticles2{
     background: url(img/animes.jpg) center/cover;
@@ -396,13 +396,13 @@ td{
     background: url(img/bricoles.jpg) center/cover;
 }
 #portfolioArticles4{
-    background: url(img/logo.jpg) center/cover;
+    background: url(img/logo.jpg);
 }
 #portfolioArticles5{
-    background: url(img/logo.jpg) center/cover;
+    background: url(img/logo.jpg);
 }
 #portfolioArticles6{
-    background: url(img/logo.jpg) center/cover;
+    background: url(img/logo.jpg);
 }
 
 .portfolioArticlesTitle{
@@ -503,16 +503,23 @@ td{
 /* -----COORDONNEES--------------------------------------------------------------------------------------- */
 
 .boxContactInformation{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     height: 40%;
-    width: 50%;
-    margin: 50px auto;
-    background-color:peachpuff;
+    width: 90%;
+    margin: 30px auto;
+    background-color:antiquewhite;
     border: 5px double black;
     border-radius: 20px;
     line-height: 0.6;
+    overflow: hidden;
 }
 .contactInformation{
     color:rgb(61, 61, 61);
+}
+.contactInformationText{
+    margin: 0 auto;
 }
 
 /* IFRAME */
@@ -521,17 +528,18 @@ iframe{
 }
 .mapouter{
     position:relative;
-    margin: 0 auto;
-    border: 1px solid black;
+    height: 100%;
+    width: 700px;
+    border: 5px double black;
+    border-right: none;
     text-align:right;
-    height:500px;
-    width:600px;
+
 }
 .gmap_canvas{
+    height: 100%;
+    width: 700px;
+    background: none;
     overflow:hidden;
-    background:none;
-    height:500px;
-    width:600px;
 }
 @media(max-width: 900px){
     .mapouter,.gmap_canvas{
@@ -558,4 +566,13 @@ iframe{
 .projectsTitle{
     color: black;
     font-family: 'spa';/* <<<FONT */
+}
+
+/* -----MENTIONS------------------------------------------------------------------------------------------- */
+
+.mentions{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
 }

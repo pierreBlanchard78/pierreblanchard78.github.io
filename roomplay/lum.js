@@ -1,5 +1,6 @@
 // BACKGROUND
 const body = document.querySelector('.body')
+let audio = new Audio('lum.mp3')
 // INTERVAL CREATION LUM(temps entre chaque création objet lum)
 let intervalCreateLum = 500
 // TIME BEFORE REMOVE LUM(temps avant suppression objet lum)
@@ -18,7 +19,7 @@ function functionlum(){
     setTimeout(() => {body.appendChild(lum)},0)
 
     let movex = Math.random() * window.innerWidth
-    let movey = Math.random() * window.innerHeight * 5
+    let movey = Math.random() * window.innerHeight * 4
     let lumColors = [
         'radial-gradient(white,turquoise,transparent,transparent)',
         'radial-gradient(white,gold,transparent,transparent)',
@@ -35,11 +36,12 @@ function functionlum(){
     lum.style.height = lum.style.width = Math.random() * 100 + 'px'; 
     lum.style.background = lumColors[Math.floor(Math.random()*8)];
     lum.style.position = 'absolute';
-    lum.style.cursor = 'pointer';
+    // lum.style.cursor = 'pointer'
     lum.style.transition = '2s';
     lum.style.zIndex = '-1';
     lum.style.opacity = '0%'
-    lum.classList.add('lum');
+
+console.log(lum.style.cursor)
 
     setTimeout(() => {
         lum.style.opacity = '50%'
@@ -119,6 +121,12 @@ function functionlum(){
         let randomFunctionMove = arrayFunctionMove[[Math.floor(Math.random()* 8)]]
         moveDirection(randomFunctionMove)
     }
+
+    lum.addEventListener('click', () => {
+        console.log('lol')
+    audio.play()
+    lum.remove()
+    })
 }
 
 

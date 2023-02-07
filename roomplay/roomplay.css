@@ -117,34 +117,34 @@
   }
 }
 .boxText {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  margin: 25px auto;
-  padding: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* width: 50%; */
+  /* margin: 10px 0; */
+  /* padding: 10px; */
   background-color: rgb(86, 52, 148);
   border-radius: 25px;
-  text-align: center;
+  /* text-align: center; */
   color: rgb(38, 0, 109);
   font-family: system-ui;
 }
 
 .boxText p {
-  width: 500px;
-  margin: 0 10px;
+  max-width: 500px;
+  /* margin: 0 10px; */
   font-weight: bold;
 }
 
-.boxPhotos, .boxMessage {
+/* .boxPhotos, .boxMessage {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.boxTechs {
+/* .boxTechs {
   display: flex;
   align-items: center;
-}
+} */
 
 .imgTechs {
   height: 30px;

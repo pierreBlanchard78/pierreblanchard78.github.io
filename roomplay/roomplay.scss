@@ -90,13 +90,14 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    margin: 25px auto;
+    margin: 10px 0;
     padding: 10px;
     background-color: rgb(86, 52, 148);
     border-radius: 25px;
     text-align: center;
     color: rgb(38, 0, 109);
     font-family: system-ui;
+    overflow: hidden;
 }
 .boxText p {
     width: 500px;
@@ -134,7 +135,7 @@
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    }
+}
 
 
 .roomplayArticlesImage{
