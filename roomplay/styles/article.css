@@ -1,0 +1,32 @@
+.roomplayArticlesBox {
+  height: 500px;
+  width: 60%;
+  margin: 50px 0;
+  padding: 50px 0;
+  border: 5px solid rgb(38, 0, 109);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.roomplayArticles {
+  min-height: 300px;
+  max-width: 95%;
+  min-width: 150px;
+  margin: 50px 0;
+  border: 5px double grey;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.roomplayArticlesPlace {
+  min-width: 80%;
+  background-color: transparent;
+}
+
+.roomplayArticlesImage {
+  border: 5px double grey;
+  border-radius: 10px;
+  transition: 1s;
+}/*# sourceMappingURL=articles.css.map */

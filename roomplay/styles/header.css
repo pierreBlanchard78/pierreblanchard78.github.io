@@ -1,0 +1,68 @@
+.headerRoomplay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(38, 0, 109);
+}
+
+.buttonNavigationroomplay {
+  margin: 0px 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  color: darkslategray;
+}
+
+.buttonNavigationroomplay:hover {
+  color: yellowgreen;
+}
+
+.buttonNavClicked {
+  animation: click 0.5s linear infinite;
+}
+
+@keyframes click {
+  0% {
+    border: 2px solid yellowgreen;
+  }
+  20% {
+    border: 2px solid transparent;
+  }
+  50% {
+    border: 2px solid yellowgreen;
+  }
+  70% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid yellowgreen;
+  }
+}
+.boxText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgb(86, 52, 148);
+  border-radius: 25px;
+  text-align: center;
+  color: rgb(38, 0, 109);
+  font-family: system-ui;
+  overflow: hidden;
+}
+
+.boxText p {
+  max-width: 500px;
+  font-weight: bold;
+}
+
+.imgTechs {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}/*# sourceMappingURL=header.css.map */

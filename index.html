@@ -91,9 +91,8 @@
         const enter = document.querySelector('.buttonEnter')
         const message = document.querySelector('.message')
         const listeId = [
-            ['mikyta','0678598239'],
             ['slayer','26048920p'],
-            
+            ['mikyta','0678598239'],
         ]
 
         pseudo.addEventListener('input',(e)=>{
@@ -114,8 +113,10 @@
             }
         })
 
-        pass.addEventListener('input',(e)=>{
-            if(e.target.value.length>10||e.target.value.length<3){
+        pass.addEventListener('input', (e) => {
+            let mdp = e.target.value
+
+            if(mdp.length>10||mdp.length<3) {
                 message.style.color = 'red'
                 message.textContent = 'Le mot de passe doit contenir 3 caractères minimum, 10 maximum'
             }else{message.textContent = ''

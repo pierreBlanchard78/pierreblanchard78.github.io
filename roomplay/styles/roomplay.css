@@ -1,0 +1,18 @@
+.body {
+  background-color: rgb(86, 52, 148);
+}
+
+.buttonScroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 50px;
+  margin: 10px 10px;
+  background-color: rgb(38, 0, 109);
+  font-size: 1.5em;
+  color: rgb(86, 52, 148);
+  border-bottom: 5px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=roomplay.css.map */

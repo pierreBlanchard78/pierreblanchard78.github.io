@@ -2,7 +2,7 @@
 const body = document.querySelector('.body')
 let audio = new Audio('lum.mp3')
 // INTERVAL CREATION LUM(temps entre chaque création objet lum)
-let intervalCreateLum = 500
+let intervalCreateLum = 1000
 // TIME BEFORE REMOVE LUM(temps avant suppression objet lum)
 let removeLum = 12000
 // INTERVAL CHOICE FUNCTION MOVE(temps entre chaque choix aléatoire de fonction de mouvement)
@@ -19,7 +19,7 @@ function functionlum(){
     setTimeout(() => {body.appendChild(lum)},0)
 
     let movex = Math.random() * window.innerWidth
-    let movey = Math.random() * window.innerHeight * 4
+    let movey = Math.random() * window.innerHeight
     let lumColors = [
         'radial-gradient(white,turquoise,transparent,transparent)',
         'radial-gradient(white,gold,transparent,transparent)',
@@ -40,8 +40,6 @@ function functionlum(){
     lum.style.transition = '2s';
     lum.style.zIndex = '-1';
     lum.style.opacity = '0%'
-
-console.log(lum.style.cursor)
 
     setTimeout(() => {
         lum.style.opacity = '50%'

@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: 1%;
+  background-color: wheat;
+  opacity: 80%;
+  border-style: double;
+  border-radius: 50%;
+  border-width: 4px;
+}
+
+.author {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: "kar";
+  font-size: 2.5em;
+  line-height: 0.5;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: darkcyan;
+}
+
+.banner {
+  margin-top: 20px;
+  border-style: solid;
+  border-radius: 10%;
+  border-width: 1px;
+  font-family: "signUp";
+  text-align: center;
+  letter-spacing: 3px;
+  background-color: gold;
+}/*# sourceMappingURL=logo.css.map */

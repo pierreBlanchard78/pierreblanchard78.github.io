@@ -42,14 +42,7 @@ body {
   border-bottom-right-radius: 10px;
   background: brown;
   color: white;
-  -webkit-animation: bord 1s linear infinite;
-          animation: bord 1s linear infinite;
-}
-
-@-webkit-keyframes bord {
-  50% {
-    border-color: yellow;
-  }
+  animation: bord 1s linear infinite;
 }
 
 @keyframes bord {
@@ -73,20 +66,7 @@ body {
 
 /* JACKPOT ACTIF */
 .lumjack {
-  -webkit-animation: jack 0.3s linear infinite;
-          animation: jack 0.3s linear infinite;
-}
-
-@-webkit-keyframes jack {
-  0% {
-    color: white;
-  }
-  50% {
-    color: yellow;
-  }
-  100% {
-    color: red;
-  }
+  animation: jack 0.3s linear infinite;
 }
 
 @keyframes jack {
@@ -160,17 +140,7 @@ body {
 
 /* FLASHING TOKENS INFOS */
 .lumgains {
-  -webkit-animation: lum 0.2s linear infinite;
-          animation: lum 0.2s linear infinite;
-}
-
-@-webkit-keyframes lum {
-  0% {
-    color: red;
-  }
-  100% {
-    color: white;
-  }
+  animation: lum 0.2s linear infinite;
 }
 
 @keyframes lum {
@@ -204,17 +174,7 @@ body {
 }
 
 .buttonsMachine:hover {
-  -webkit-animation: lumButtons 0.3s linear infinite;
-          animation: lumButtons 0.3s linear infinite;
-}
-
-@-webkit-keyframes lumButtons {
-  0% {
-    color: red;
-  }
-  100% {
-    color: white;
-  }
+  animation: lumButtons 0.3s linear infinite;
 }
 
 @keyframes lumButtons {

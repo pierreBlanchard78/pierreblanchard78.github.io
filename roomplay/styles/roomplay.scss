@@ -1,0 +1,23 @@
+.body {
+    // max-height: 100vh;
+    background-color: $body;
+    // overflow: hidden;
+}
+
+.boxButtonScroll {
+    height: 50px;
+}
+.buttonScroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 50px;
+    margin: 10px 10px;
+    background-color: $header;
+    font-size: 1.5em;
+    color: $border;
+    border-bottom: 5px solid $border;
+    border-radius: 10px;
+    cursor: pointer;
+}

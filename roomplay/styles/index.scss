@@ -1,0 +1,23 @@
+@font-face {font-family: 'kar'; src: url(../fonts/Karstar\ Free.ttf);}
+@font-face {font-family: 'signUp';src: url(../fonts/Signup.ttf);}
+
+$body: rgb(86, 52, 148);
+$header: rgb(38, 0, 109);
+$border: grey;
+$buttonNav: yellowgreen;
+
+
+
+
+
+@import "./roomplay.scss";
+@import "./logo.scss";
+@import "./header.scss";
+@import "./article.scss";
+
+@media (max-width: 576px) {
+    .boxText, .logo, .buttonNavigationroomplay, .roomplayArticle {
+        font-size: 0.7em;
+        scale: 0.8
+    }
+}

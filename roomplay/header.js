@@ -1,9 +1,7 @@
-// HTML ELEMENTS
-const roomplayArticles = document.querySelectorAll('.roomplayArticles')
-const roomplayArticlesImage = document.querySelectorAll('.roomplayArticlesImage')
 const buttonNavigationroomplay = document.querySelectorAll('.buttonNavigationroomplay')
 const boxPhoto = document.querySelector('.boxPhoto')
 const boxMessage = document.querySelector('.boxMessage')
+
 // MESSAGE ELEMENTS
 const welcomeMessageString = ['"Bonjour et Bienvenu sur mon salon de jeux. Ce site rassemble des applications de minis-jeu developpées dans le cadre de mon apprentissage de developpeur web"']
 const whoamiMessageString = ['"Je m\'appelle Pierre BLANCHARD. Actuellement en formation developpeur web, j\'ai developpé ce site dans le but de présenter mon projet ainsi que mes créations."']
@@ -39,11 +37,13 @@ const projectsMessageString = [
     const link3 = document.createElement('a')
     const link4 = document.createElement('a')
 
+// LINKS
+    // LINKS HREF
     link1.href = 'https://www.youtube.com/c/FromScratchD%C3%A9veloppementWeb'
     link2.href = 'https://developer.mozilla.org/fr/'
     link3.href = 'https://flexbox.help/'
     link4.href = 'https://github.com/'
-
+    // LINKS TITLES
     link1.innerHTML = 'From Scratch - Developpement Web'
     link2.innerHTML = 'MDN Webdocs'
     link3.innerHTML = 'Flexbox'
@@ -133,51 +133,4 @@ function removePhoto() {
             boxPhoto.firstChild.remove()
         }
     }
-}
-
-// ARTICLES ANIME
-for(article of roomplayArticles) {
-    // ARTICLES MOUSE LIGHT
-    for(elem of roomplayArticlesImage) {
-        article.style.transition = '1s'
-        article.addEventListener('mouseenter', (e) => {
-            switch(e.target.id) {
-                case 'roomplayArticles1': roomplayArticlesImage[0].style.boxShadow = '0px 0px 100px white';break;
-                case 'roomplayArticles2': roomplayArticlesImage[1].style.boxShadow = '0px 0px 100px white';break;
-                case 'roomplayArticles3': roomplayArticlesImage[2].style.boxShadow = '0px 0px 100px white';break;
-                case 'roomplayArticles4': roomplayArticlesImage[3].style.boxShadow = '0px 0px 100px white';break;
-                case 'roomplayArticles5': roomplayArticlesImage[4].style.boxShadow = '0px 0px 100px white';break;
-            }
-        })
-        article.addEventListener('mouseleave', (e) => {
-            switch(e.target.id) {
-                case 'roomplayArticles1': roomplayArticlesImage[0].style.boxShadow = 'none';break;
-                case 'roomplayArticles2': roomplayArticlesImage[1].style.boxShadow = 'none';break;
-                case 'roomplayArticles3': roomplayArticlesImage[2].style.boxShadow = 'none';break;
-                case 'roomplayArticles4': roomplayArticlesImage[3].style.boxShadow = 'none';break;
-                case 'roomplayArticles5': roomplayArticlesImage[4].style.boxShadow = 'none';break;
-            }
-        })
-    }   
-    // ARTICLES DISPLAY SCROLL
-    roomplayArticles[0].style.transform = 'translate(-200%,0%)'
-    roomplayArticles[2].style.transform = 'translate(-200%,0%)'
-    roomplayArticles[4].style.transform = 'translate(-200%,0%)'
-    roomplayArticles[1].style.transform = 'translate(200%,0%)'
-    roomplayArticles[3].style.transform = 'translate(200%,0%)'
-
-    window.addEventListener('scroll', () => {
-        // DISPLAY
-        if(scrollY>=1){roomplayArticles[0].style.transform = 'translate(0%,0%)'}
-        if(scrollY>=300){roomplayArticles[1].style.transform = 'translate(90%,0%)'}
-        if(scrollY>=600){roomplayArticles[2].style.transform = 'translate(0%,0%)'}
-        if(scrollY>=1000){roomplayArticles[3].style.transform = 'translate(90%,0%)'}
-        if(scrollY>=1600){roomplayArticles[4].style.transform = 'translate(0%,0%)'}
-        // REMOVE
-        if(scrollY<=1){roomplayArticles[0].style.transform = 'translate(-200%,0%)'}
-        if(scrollY<=300){roomplayArticles[1].style.transform = 'translate(200%,0%)'}
-        if(scrollY<=600){roomplayArticles[2].style.transform = 'translate(-200%,0%)'}
-        if(scrollY<=1000){roomplayArticles[3].style.transform = 'translate(200%,0%)'}
-        if(scrollY<=1600){roomplayArticles[4].style.transform = 'translate(-200%,0%)'}
-    })
 }
